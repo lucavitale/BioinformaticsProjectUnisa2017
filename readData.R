@@ -10,7 +10,7 @@ readData <- function() {
   mirnaTable <- mirnaTable[,which(colnames(mirnaTable) %in% rownames(phenoData))]
   phenoData <- AnnotatedDataFrame(phenoData)
   
-  mirnaSet <- ExpressionSet(mirnaTable, phenoData = phenoData)
+  return(ExpressionSet(mirnaTable, phenoData = phenoData))
 }
 
-readData()
+mirnaSet <- readData()
