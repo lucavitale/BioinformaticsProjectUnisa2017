@@ -7,6 +7,7 @@ readData <- function() {
   
   mirnaTable <- as.matrix(read.table(fileExprsMirnas))
   phenoData <- read.table(filePhenodata)
+  names(phenoData) <- c("class", "pat_id")
   mirnaTable <- mirnaTable[,which(colnames(mirnaTable) %in% rownames(phenoData))]
   phenoData <- AnnotatedDataFrame(phenoData)
   
@@ -14,3 +15,5 @@ readData <- function() {
 }
 
 mirnaSet <- readData()
+res <- discriminantFuzzyPattern(mirnaSet, piVal = 0.6)
+plotDiscriminantFuzzyPattern(res$discriminant.fuzzy.pattern)
