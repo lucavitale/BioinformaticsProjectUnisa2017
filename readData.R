@@ -17,3 +17,5 @@ readData <- function() {
 mirnaSet <- readData()
 res <- discriminantFuzzyPattern(mirnaSet, piVal = 0.6)
 plotDiscriminantFuzzyPattern(res$discriminant.fuzzy.pattern)
+
+
