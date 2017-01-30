@@ -117,7 +117,6 @@ TCGA-A2-A04P	ccd4a24b-d8cc-4686-9dee-c98b0c5a8d21	724bc471-dc1c-41b7-b5eb-a92ecb
 TCGA-D8-A1JB	dd96a9c7-899c-47cd-a0f9-b149ed07a5d6	2863b9b5-39e0-4780-ac7d-4a4dcdf6d3c5	7bc55a1b-4962-4882-80f9-db2f0a808bd9.htseq.counts.gz	stage iib	RNA-Seq
 TCGA-A7-A13G	6cd9baf5-bbe0-4c1e-a87f-c53b3af22890	573b6ee3-5d0b-4e71-a167-3531e38340d9	7f92fd47-9938-4069-bc1d-ce6d7d6c1dc4.htseq.counts.gz	stage iia	RNA-Seq
 TCGA-A7-A0DB	f130f376-5801-40f9-975d-a7e2f7b5670d	bafb1ae0-12f1-40b4-bbbc-ca2982ece54a	7bca938a-45fa-4a07-ba7b-71796388e645.FPKM.txt.gz	stage iia	RNA-Seq
-TCGA-BH-A0B2	57a1604c-60b7-4b30-a75e-f70939532c5c	0c5eb897-7160-43bd-9353-a67c39f54915	6632e6de-5170-4096-a298-078b6bfd3760.FPKM-UQ.txt.gz		RNA-Seq
 TCGA-BH-A0AZ	518f231c-f5f9-4a39-a97b-7fd5666d3e50	d45a9e29-bb66-4282-bd40-dbe273c93d6f	96ddce60-2be5-4f57-814b-35722aa00fd9.htseq.counts.gz	stage iiia	RNA-Seq
 TCGA-D8-A1X6	42e47f3a-dff7-41e4-8f84-146d97e8ab72	6ae8c721-8f9e-4b44-879c-ac0bdbfc9531	c9b778fa-3a42-4447-8788-efa1dec49899.htseq.counts.gz	stage iiia	RNA-Seq
 TCGA-AN-A0FY	de75d0b9-0f47-4732-8df5-05c350cfcd32	8d018e60-9502-4df3-a1f8-32e7d2ebf815	mirnas.quantification.txt	stage ia	miRNA-Seq
@@ -1341,7 +1340,6 @@ TCGA-AR-A1AK	94b03e1d-50ec-4680-bffd-7086d1536ff2	2ea02a8a-1929-4764-a9a1-1de676
 TCGA-BH-A0DZ	478eb8aa-50b8-4ce5-98e4-d518ede4b174	26e5003e-e56f-49df-82d1-9d89c6ccf6c9	mirnas.quantification.txt	stage iib	miRNA-Seq
 TCGA-AO-A03M	095c7985-3842-494f-b591-706ad1cd2133	f202bf44-7c00-45df-983f-8281f49d5676	mirnas.quantification.txt	stage i	miRNA-Seq
 TCGA-B6-A0X4	4e42fdc5-2a8b-49e9-87ef-6db7a6692d08	07f821fa-5e4c-486f-a1ea-e32375219bd0	b4824c2d-fed2-4fad-bf6f-797119546006.htseq.counts.gz	stage iib	RNA-Seq
-TCGA-BH-A0B2	57a1604c-60b7-4b30-a75e-f70939532c5c	d1ee71d6-e989-4d9e-9601-f464cb3e7d9f	6632e6de-5170-4096-a298-078b6bfd3760.FPKM.txt.gz		RNA-Seq
 TCGA-AC-A8OS	d5e655fe-3fbc-47b0-ba23-1d1dd01d591c	52edd93d-2490-4a73-aa47-dd4a3175bd87	be5ceb98-a493-4cad-8bab-281342dea3d0.htseq.counts.gz	stage iia	RNA-Seq
 TCGA-BH-A0DT	74f31744-0aed-4633-beec-4e203315f0b7	d663f696-01a5-46a4-9d77-9428b352628c	cc55afdc-78e2-48c5-b1ac-386033852bca.htseq.counts.gz	stage iia	RNA-Seq
 TCGA-AO-A12B	f6ed684f-ee7a-496c-80d5-6eacd494d16a	38f33201-21c3-4811-9e72-5240db848fa9	1c421a13-81a2-49de-b0a1-a2c0dc563357.htseq.counts.gz	stage iia	RNA-Seq
@@ -3612,7 +3610,6 @@ TCGA-A2-A0YT	14b95463-2108-4921-afc2-e29eef52b18f	3b076c95-66a8-4131-a43f-11575b
 TCGA-C8-A12V	7e1673f8-5758-4963-8804-d5e39f06205b	3f4124da-acdc-4f02-8a71-809d79150079	54401c2a-7124-42b7-90d8-6267575bce51.FPKM-UQ.txt.gz	stage iia	RNA-Seq
 TCGA-E2-A15L	37242f5a-25ae-4b1f-9ce6-09ce1dc92539	491671ea-a211-4594-bdbe-33fb85aa6b03	895c3465-8933-414f-a27c-83389d6f82ec.htseq.counts.gz	stage iia	RNA-Seq
 TCGA-S3-A6ZG	1a679332-30a3-4495-a2e5-39d299e14333	51af2659-2a7a-4af1-a130-abf1f605aadb	528dfb33-8225-469d-bd57-d1c5ec8991bb.FPKM.txt.gz	stage iib	RNA-Seq
-TCGA-BH-A0B2	57a1604c-60b7-4b30-a75e-f70939532c5c	1dba1221-ea60-407e-81d3-3bb2e90f88ba	mirnas.quantification.txt		miRNA-Seq
 TCGA-AO-A03V	a6cb373a-1604-4e25-bd81-da6c3e4f06ee	13430e4a-3043-4807-a293-b608929cf7c8	mirnas.quantification.txt	stage i	miRNA-Seq
 TCGA-B6-A0IN	16a8d916-ad46-4690-b1a5-3b2b323f4336	1750ec00-4d55-4c3e-870b-2f35ec6964f2	0826fcd7-749e-4788-a81d-f506b9caf7ff.FPKM.txt.gz	stage x	RNA-Seq
 TCGA-AN-A0FZ	8240c4ae-f878-4882-aa07-7857c7ac52cf	cd24eba4-f8bb-4b82-89e0-c49a77776381	1fbc7c43-62b9-4f70-8f26-fbe1900e386b.FPKM-UQ.txt.gz	stage iiia	RNA-Seq
@@ -3958,7 +3955,6 @@ TCGA-A2-A0YD	2c6adb12-380d-4710-a7e6-93d5a0e53289	8eeabfad-2f2a-45ce-8da0-f572d6
 TCGA-A8-A095	29df128d-ace2-40cf-88ee-3f6f2170f159	ac7b87c6-b741-4329-ba15-1b30ff9c3086	mirnas.quantification.txt	stage i	miRNA-Seq
 TCGA-BH-A0AZ	518f231c-f5f9-4a39-a97b-7fd5666d3e50	f1a982d1-28b4-47ec-9e42-1f3cf5b2012a	be8c6402-fb97-4c31-8a18-a5b4783a1726.FPKM.txt.gz	stage iiia	RNA-Seq
 TCGA-B6-A0IM	5a4b7098-1f6a-49e9-b364-29d6d34f5bd5	46c6ea37-574d-4511-ad8f-df7df6a07b96	12ae6516-f6b0-4b4f-adee-e9f98f814a06.FPKM.txt.gz	stage iib	RNA-Seq
-TCGA-BH-A0B2	57a1604c-60b7-4b30-a75e-f70939532c5c	090ef836-5058-4ac6-9a19-ba50d137e842	6632e6de-5170-4096-a298-078b6bfd3760.htseq.counts.gz		RNA-Seq
 TCGA-C8-A3M8	c1e704d6-a33b-4891-90bd-992b0040c075	34a2a506-75bc-4fd4-8158-868734b1e29a	a8e5861f-e86c-473d-8ff7-5630532b3c61.htseq.counts.gz	stage ia	RNA-Seq
 TCGA-E2-A1B4	dbb2da92-99dd-400c-bc05-e87d7273656c	3fc6d13d-a3ae-49db-a744-85df78b3e828	bdc7d527-3905-4905-b245-b282883ea3a6.FPKM-UQ.txt.gz	stage iiia	RNA-Seq
 TCGA-C8-A3M7	959ff069-8a49-4c9b-85c2-5291cac0acff	58a93e4c-bc2c-4acc-9f9d-c1b268f8502c	d229a59b-4f6c-4714-8dd5-1c714a764b22.htseq.counts.gz	stage iiib	RNA-Seq
