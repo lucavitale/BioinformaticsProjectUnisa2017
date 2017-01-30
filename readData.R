@@ -6,5 +6,5 @@ readData <- function() {
   filePhenodata <- file.path(getwd(), "patient_classes.txt"); filePhenodata
   geneData <- readExpressionSet(fileExprsMirnas, phenoDataFile = filePhenodata, exprsArgs = list(), phenoDataArgs = list(quote="\""))
 }
-#read data function
+
 readData()
