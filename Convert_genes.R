@@ -15,7 +15,6 @@ convertIDs <- function( ids, from, to, db, ifMultiple=c("putNA", "useFirst")) {
 }
 
 gc <- read.table("gene_codes.txt",sep="\t")
-gc$V1
 
 entrez <- convertIDs(as.character(gc$V1), "ENSEMBL", "ENTREZID", org.Hs.eg.db, ifMultiple = "useFirst")
 symbol <- convertIDs(as.character(gc$V1), "ENSEMBL", "SYMBOL", org.Hs.eg.db, ifMultiple = "useFirst")
