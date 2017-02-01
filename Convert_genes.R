@@ -14,10 +14,18 @@ convertIDs <- function( ids, from, to, db, ifMultiple=c("putNA", "useFirst")) {
   return( selRes[ match( ids, selRes[,1] ), 2 ] )
 }
 
-gc <- read.table("gene_codes.txt",sep="\t")
+load("RNATable.Rdata")
+ensembles <- rownames(assay(RNATable,1))
 
-entrez <- convertIDs(as.character(gc$V1), "ENSEMBL", "ENTREZID", org.Hs.eg.db, ifMultiple = "useFirst")
-symbol <- convertIDs(as.character(gc$V1), "ENSEMBL", "SYMBOL", org.Hs.eg.db, ifMultiple = "useFirst")
+entrez <- convertIDs(ensembles, "ENSEMBL", "ENTREZID", org.Hs.eg.db, ifMultiple = "useFirst")
+#symbol <- convertIDs(as.character(gc$V1), "ENSEMBL", "SYMBOL", org.Hs.eg.db, ifMultiple = "useFirst")
 
-notnullEntrez <- length(entrez) - sum(is.na(entrez))
-notnullSymbol <- length(symbol) - sum(is.na(symbol))
+## Number of genes
+print(length(unique(entrez)))
+
+##Only entrez genes with value
+filtered <- assay(RNATable,1)[- which(is.na(entrez)),]
+
+##Change rownames ensemble to entrezID
+rownames(filtered) <- entrez[- which(is.na(entrez))]
+
