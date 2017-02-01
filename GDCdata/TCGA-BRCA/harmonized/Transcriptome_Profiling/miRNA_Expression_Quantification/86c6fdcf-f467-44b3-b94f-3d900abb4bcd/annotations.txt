@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+e8a42b2b-9d47-55fe-895f-407aa79768a1	23857	case	444374f8-9282-439c-af00-0f828edcbff3	Neoadjuvant therapy	Notification	2014-12-11T10:24:00-05:00	Approved	During enrollment TSS discovered patient had 5FU, Epirubicin and cyclophosphamide prior to cancer procuemnt of the TCGA maliganncy. 

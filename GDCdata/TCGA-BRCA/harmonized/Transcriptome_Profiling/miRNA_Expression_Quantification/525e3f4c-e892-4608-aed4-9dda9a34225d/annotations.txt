@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+b579ae9c-25c4-5839-8ff1-f306baced8b8	28359	case	e6f527a2-38eb-457e-bb39-3c5b9c0bcbec	Neoadjuvant therapy	Notification	2015-05-14T12:08:46-04:00	Approved	Patient had hormone therapy (Exemestane) 2 months prior to TCGA specimen procurement

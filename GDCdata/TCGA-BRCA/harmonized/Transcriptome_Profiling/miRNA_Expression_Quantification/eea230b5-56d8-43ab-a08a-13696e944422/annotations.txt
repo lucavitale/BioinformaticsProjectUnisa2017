@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+03cb8fbc-34de-5b61-bfa7-ffc79a4b1aac	19865	sample	0cc10a1e-a90a-4c55-87a2-a74d47474a4a	Item does not meet study protocol	Notification	2014-02-27T14:29:41-05:00	Approved	TCGA-B6-A1KC-01A was not pathology reviewed and should not be used. TCGA-B6-A1KC-01B should be used instead.

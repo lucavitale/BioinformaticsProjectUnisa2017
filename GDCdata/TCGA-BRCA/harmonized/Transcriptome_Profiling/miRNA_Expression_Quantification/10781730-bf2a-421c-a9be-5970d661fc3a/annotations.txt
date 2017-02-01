@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+eece96b7-df23-57b5-bef5-e00edc5a4ea3	1052	case	09765b0a-94f6-47d2-af56-93368084ac3a	Prior malignancy	Notification	2010-12-14T08:34:29-05:00	Approved	Case had prior malignancy
