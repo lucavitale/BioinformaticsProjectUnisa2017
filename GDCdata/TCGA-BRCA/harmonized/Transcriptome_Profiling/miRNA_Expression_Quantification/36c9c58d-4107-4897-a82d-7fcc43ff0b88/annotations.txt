@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-3803b284-c4c5-5fe5-92b7-dd2f8088debf	26861	case	fa4e082a-d213-412e-8d91-842a6f4bef12	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2015-02-26T09:35:51-05:00	Approved	During Enrollment it was found that patient recieved systemic tamoxifen 3 years prior to resection of TCGA tumor (left breast) for a prior right breast malignancy.

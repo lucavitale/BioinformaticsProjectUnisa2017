@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-43770fbc-9990-55cb-9360-f648cff75374	23837	case	cb9f5e50-f49d-4899-8895-9367afcc1015	Item does not meet study protocol	Notification	2014-12-03T11:43:41-05:00	Approved	Tumor is DCIS and not invasive which is required by the TCGA BRCA study

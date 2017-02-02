@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-319be750-b198-5924-a69f-fe0585839cbd	28963	case	e663954c-05a8-479a-a623-400c1eb5efc6	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2015-09-08T16:04:00-04:00	Approved	The patient had a prior thyroid cancer (~28 years prior) and a prior lung cancer (~23 years prior) to the TCGA cancer procurement. The TSS does not know if radiation or chemotherapy was given which is unacceptable for TCGA.  

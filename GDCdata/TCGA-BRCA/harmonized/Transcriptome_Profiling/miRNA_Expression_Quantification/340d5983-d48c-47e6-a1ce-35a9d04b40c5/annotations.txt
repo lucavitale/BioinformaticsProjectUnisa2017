@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-6a2bdd98-221d-594e-9b07-3bd02b3107c5	20690	case	5c9d8163-a68e-43ce-9cba-effb7405761e	Neoadjuvant therapy	Notification	2014-06-11T08:20:53-04:00	Approved	Patient recieved neoadjuvant therapy for the TCGA sample (Armidex). 

@@ -1,3 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-3458835d-b458-5dda-bd84-a9f04920234b	3182	case	14b95463-2108-4921-afc2-e29eef52b18f	Neoadjuvant therapy	Notification	2011-08-19T16:43:19-04:00	Approved	Subject is positive for neoadjuvant therapy.
-34dd7b7a-71b5-5704-beef-604f37b3796f	1055	case	14b95463-2108-4921-afc2-e29eef52b18f	Prior malignancy	Notification	2010-12-14T08:37:53-05:00	Approved	Case had Prior malignancy

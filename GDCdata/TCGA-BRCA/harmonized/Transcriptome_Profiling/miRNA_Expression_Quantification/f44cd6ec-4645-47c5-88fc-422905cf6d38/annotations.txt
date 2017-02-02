@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-a541a731-f5e7-5978-b0fc-3012fb57d1fe	810	case	1557183c-aedd-4df6-b98a-3654667f7b69	Prior malignancy	Notification	2010-10-28T00:00:00-04:00	Approved	No Note Specified

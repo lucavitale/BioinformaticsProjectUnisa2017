@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-d72b052a-09e5-5274-bf46-1e104500692c	28360	case	d093173f-08ab-4138-bf3c-399c45a6e163	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2015-05-14T16:39:30-04:00	Approved	Patient had prior primary breast cancer in the same breast as the TCGA primary and received chemotherapy (Adriamycin and Cytoxan)

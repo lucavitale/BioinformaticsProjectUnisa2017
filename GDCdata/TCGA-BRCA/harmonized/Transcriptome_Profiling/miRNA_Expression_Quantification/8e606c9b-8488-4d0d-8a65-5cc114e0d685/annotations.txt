@@ -1,2 +1,0 @@
-id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
-dade8e7a-7871-5d8f-9615-497d5e4cd1b8	28761	case	b3354b72-2637-4edc-9a95-e55801d3ac13	Neoadjuvant therapy	Notification	2015-07-29T13:57:52-04:00	Approved	The patient had neoadjuvant therapy (5-Fluorouracil, Epirubicin, and Cyclophosphamide) 2 months prior to TCGA cancer procurement. 
