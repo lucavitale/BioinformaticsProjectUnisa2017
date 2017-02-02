@@ -35,6 +35,12 @@ RNAByAliquot <- as.data.frame(filtered)
 RNAByAliquot$genes <- row.names(RNAByAliquot)
 RNAByAliquot <- aggregate(. ~ genes,FUN = median, data=RNAByAliquot)
 
+save(RNAByAliquot,file = "RNAByAliquot.Rdata")
 
+## Changed Barcode with 
+barCode <- colData(RNATable)[,2:3]
+names(RNAByAliquot) <- c("genes",colData(RNATable)$patient)
+row.names(RNAByAliquot) <- RNAByAliquot$genes
+RNAByAliquot <- RNAByAliquot[,-1]
 
 
