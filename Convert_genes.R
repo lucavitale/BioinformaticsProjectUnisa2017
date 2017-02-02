@@ -1,4 +1,5 @@
 library(org.Hs.eg.db)
+library(SummarizedExperiment)
 
 convertIDs <- function( ids, from, to, db, ifMultiple=c("putNA", "useFirst")) {
   stopifnot( inherits( db, "AnnotationDb" ) )
@@ -28,4 +29,12 @@ filtered <- assay(RNATable,1)[- which(is.na(entrez)),]
 
 ##Change rownames ensemble to entrezID
 rownames(filtered) <- entrez[- which(is.na(entrez))]
+
+## Aggregate by entrezID
+RNAByAliquot <- as.data.frame(filtered)
+RNAByAliquot$genes <- row.names(RNAByAliquot)
+RNAByAliquot <- aggregate(. ~ genes,FUN = median, data=RNAByAliquot)
+
+
+
 
