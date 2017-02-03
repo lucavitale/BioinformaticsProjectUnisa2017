@@ -20,6 +20,10 @@ names(RNAPatientsFinal) <- colPat
 rownames(RNAPatientsFinal) <- RNAPatientsFinal$submitterID
 rownames(miRNAPatientsFinal) <- miRNAPatientsFinal$submitterID 
 
+## drop factor levels 
+RNAPatientsFinal <- droplevels(RNAPatientsFinal)
+miRNAPatientsFinal <- droplevels(miRNAPatientsFinal)
+
 save(RNAPatientsFinal,file = "RNAPatientsFinal.Rdata")
 save(RNAFinal, file = "RNAFinal.Rdata")
 
