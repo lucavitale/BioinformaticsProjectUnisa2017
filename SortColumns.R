@@ -12,9 +12,13 @@ RNAPatientsFinal <- RNAPatientsFinal[order(RNAPatientsFinal$cases_0_submitter_id
 miRNAPatientsFinal <- miRNAPatientsFinal[order(miRNAPatientsFinal$cases_0_submitter_id),]
 
 ## Change columns names
-colPat <- c("caseID","sampleType","daysTolastFollowUp","fileName","siteOfResectionOrBiopsy","fileID","morphology","primaryDiagnosis","submitterID","vitalStatus","aliquotsSubmitterID","daysToDeath","daysToBirth","ageAtDiagnosis","tissueOrOrganOfOrigin","tumorStage","experimentalStrategy","stageClass")
+colPat <- c("caseID","ageAtDiagnosis","daysToBirth","daysToDeath","daysTolastFollowUp","morphology","primaryDiagnosis","siteOfResectionOrBiopsy","tissueOrOrganOfOrigin","tumorStage","vitalStatus","aliquotsSubmitterID","sampleType","submitterID","experimentalStrategy","fileID","fileName","stageClass")
 names(miRNAPatientsFinal) <- colPat
 names(RNAPatientsFinal) <- colPat
+
+## Change row names
+rownames(RNAPatientsFinal) <- RNAPatientsFinal$submitterID
+rownames(miRNAPatientsFinal) <- miRNAPatientsFinal$submitterID 
 
 save(RNAPatientsFinal,file = "RNAPatientsFinal.Rdata")
 save(RNAFinal, file = "RNAFinal.Rdata")
