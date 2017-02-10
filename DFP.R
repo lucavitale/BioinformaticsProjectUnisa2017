@@ -22,7 +22,7 @@ if (filterGenes) {
 skipFactor <- 3 # Factor to skip odd values
 zeta <- 0.5 # Threshold used in the membership functions to label the float values with a discrete value
 piVal <- 0.5 # Percentage of values of a class to determine the fuzzy patterns
-overlapping <- 2 # Determines the number of discrete labels
+overlapping <- 1 # Determines the number of discrete labels
 
 
 mfs <- calculateMembershipFunctions(esRNA, skipFactor); mfs[[1]]
@@ -41,7 +41,7 @@ if (filterGenes) {
 
 
 dvs <- discretizeExpressionValues(esRNA, mfs, zeta, overlapping); dvs[1:4,1:10]
-showDiscreteValues(dvs, featureNames(esRNA)[1:10])
+shdaowDiscreteValues(dvs, featureNames(esRNA)[1:10])
 
 fps <- calculateFuzzyPatterns(esRNA, dvs, piVal, overlapping); fps[1:30,]
 showFuzzyPatterns(fps, "stage i")[21:50]
