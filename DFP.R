@@ -34,7 +34,7 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
   
   
   dvs <- discretizeExpressionValues(esRNA, mfs, zeta, overlapping); dvs[1:4,1:10]
-  shdaowDiscreteValues(dvs, featureNames(esRNA)[1:10])
+  showDiscreteValues(dvs, featureNames(esRNA)[1:10])
   
   fps <- calculateFuzzyPatterns(esRNA, dvs, piVal, overlapping); fps[1:30,]
   showFuzzyPatterns(fps, "stage i")[21:50]
