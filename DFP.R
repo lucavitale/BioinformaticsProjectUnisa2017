@@ -63,8 +63,10 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     )
     
     if (is.na(customFileName)) {
-      exFiles <- list.files(".", "paramList*")
-      nFile <- length(exFiles) + 1
+      nFile <- 1
+      while (file.exists(paste("paramList", nFile, ".Rdata", sep = ""))) {
+        nFile <- nFile + 1
+      }
       save(paramList, file = paste("paramList", nFile, ".Rdata", sep = ""))
     } else {
       save(paramList, file = customFileName)
