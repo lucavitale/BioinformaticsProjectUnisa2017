@@ -24,9 +24,11 @@ parDiscretizeExpressionValues <- function(cluster, rmadataset, mfs, zeta = 0.5, 
   doit <- function(ig) {
     #browser()
     values <- rmam[ig, ]
-    DFP:::.fuzzyDiscretization(mfs[[ig]]$lel, mfs[[ig]]$mel, 
+    disc.values <- DFP:::.fuzzyDiscretization(mfs[[ig]]$lel, mfs[[ig]]$mel, 
                          mfs[[ig]]$hel, values, zeta, overlapping)
     #return(c(ig, disc.values))
+    print("done")
+    return(disc.values)
   }
   
   dvs <- t(parSapply(cluster, gene.names, doit))

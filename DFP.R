@@ -30,12 +30,14 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     esRNA <- ExpressionSet(as.matrix(RNAReduced),phenoData = phenoData)
   }
   
+  print(paste("Number of selected genes:", nrow(RNAReduced)))
   #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
   
   if (class(restoreFromDvs) != "matrix" && is.na(restoreFromDvs)) {
     if (core > 1) {
-      cl <- makeCluster(core)
+      cl <- makeCluster(core, outfile = "progress.log")
       dvs <- parDiscretizeExpressionValues(cl, esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
+      stopCluster(cl)
     } else {
       dvs <- discretizeExpressionValues(esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
     }
@@ -78,6 +80,6 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     }
   }
   
+  file.remove("progress.log")
   return(dfps)
-
 }
