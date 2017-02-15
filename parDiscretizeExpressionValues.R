@@ -39,3 +39,34 @@ parDiscretizeExpressionValues <- function(cluster, rmadataset, mfs, zeta = 0.5, 
   dvs
   return(dvs)
 }
+
+skipOddValues <- function (values, skipFactor = 3) 
+{
+  if (skipFactor > 0) {
+    orderv <- order(values)
+    orderv
+    vals <- values[orderv]
+    vals
+    first <- trunc(length(vals)/4)
+    first
+    third <- trunc(length(vals)/4) * 3
+    third
+    firstValue <- vals[first + 1]
+    firstValue
+    thirdValue <- vals[third + 1]
+    thirdValue
+    RIC <- thirdValue - firstValue
+    RIC
+    lowBarrier <- firstValue - (skipFactor * RIC)
+    lowBarrier
+    highBarrier <- thirdValue + (skipFactor * RIC)
+    highBarrier
+    isOutlier <- values < lowBarrier | values > highBarrier
+    isOutlier
+  } else {
+    isOutlier <- rep(0, length(values))
+  }
+  return(isOutlier)
+}
+
+assignInNamespace(".skipOddValues", skipOddValues, "DFP")
