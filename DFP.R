@@ -1,7 +1,79 @@
 library(DFP)
+library(parallel)
 
 #load("RNAFinal.Rdata")
 #load("RNAPatientsFinal.Rdata")
+
+parDiscretizeExpressionValues <- function(cluster, rmadataset, mfs, zeta = 0.5, overlapping = 2) 
+{
+  rmam <- exprs(rmadataset)
+  rmam[c(1:8), c(1:4)]
+  rmav <- as.vector(pData(phenoData(rmadataset))$class)
+  rmav
+  names(rmav) <- sampleNames(rmadataset)
+  rmav
+  gene.names <- rownames(rmam)
+  gene.names
+  dvs <- NULL
+  #for (ig in gene.names) {
+  #  values <- rmam[ig, ]
+  #  values
+  #  disc.values <- .fuzzyDiscretization(mfs[[ig]]$lel, mfs[[ig]]$mel, 
+  #                                      mfs[[ig]]$hel, values, zeta, overlapping)
+  #  disc.values
+  #  dvs <- rbind(dvs, disc.values)
+  #  dvs
+  #}
+  
+  doit <- function(ig) {
+    #browser()
+    values <- rmam[ig, ]
+    disc.values <- DFP:::.fuzzyDiscretization(mfs[[ig]]$lel, mfs[[ig]]$mel, 
+                                              mfs[[ig]]$hel, values, zeta, overlapping)
+    #return(c(ig, disc.values))
+    print("done")
+    return(disc.values)
+  }
+  
+  dvs <- t(parSapply(cluster, gene.names, doit))
+  
+  rownames(dvs) <- gene.names
+  head(dvs)
+  attr(dvs, "types") <- rmav
+  dvs
+  return(dvs)
+}
+
+skipOddValues <- function (values, skipFactor = 3) 
+{
+  if (skipFactor > 0) {
+    orderv <- order(values)
+    orderv
+    vals <- values[orderv]
+    vals
+    first <- trunc(length(vals)/4)
+    first
+    third <- trunc(length(vals)/4) * 3
+    third
+    firstValue <- vals[first + 1]
+    firstValue
+    thirdValue <- vals[third + 1]
+    thirdValue
+    RIC <- thirdValue - firstValue
+    RIC
+    lowBarrier <- firstValue - (skipFactor * RIC)
+    lowBarrier
+    highBarrier <- thirdValue + (skipFactor * RIC)
+    highBarrier
+    isOutlier <- values < lowBarrier | values > highBarrier
+    isOutlier
+  } else if (skipFactor == 0) {
+    isOutlier <- rep(FALSE, length(values))
+  }
+  return(isOutlier)
+}
+
+assignInNamespace(".skipOddValues", skipOddValues, "DFP")
 
 getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA, restoreFromDvs = NA, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1) {
   numberOfGenes = nrow(RNAFinal)
