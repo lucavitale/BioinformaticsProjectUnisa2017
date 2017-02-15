@@ -1,4 +1,6 @@
-discretizeExpressionValues <- function(rmadataset, mfs, zeta = 0.5, overlapping = 2) 
+library(parallel)
+
+parDiscretizeExpressionValues <- function(cluster, rmadataset, mfs, zeta = 0.5, overlapping = 2) 
 {
   rmam <- exprs(rmadataset)
   rmam[c(1:8), c(1:4)]
@@ -27,7 +29,7 @@ discretizeExpressionValues <- function(rmadataset, mfs, zeta = 0.5, overlapping 
     #return(c(ig, disc.values))
   }
   
-  dvs <- t(sapply(gene.names, doit))
+  dvs <- t(parSapply(cluster, gene.names, doit))
   
   rownames(dvs) <- gene.names
   head(dvs)
