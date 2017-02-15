@@ -3,7 +3,7 @@ library(DFP)
 #load("RNAFinal.Rdata")
 #load("RNAPatientsFinal.Rdata")
 
-getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA, restoreFromDvs = NA, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE) {
+getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA, restoreFromDvs = NA, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1) {
   numberOfGenes = nrow(RNAFinal)
   
   phenoData <- RNAPatientsFinal
@@ -33,7 +33,12 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
   #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
   
   if (class(restoreFromDvs) != "matrix" && is.na(restoreFromDvs)) {
-    dvs <- discretizeExpressionValues(esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
+    if (core > 1) {
+      cl <- makeCluster(core)
+      dvs <- parDiscretizeExpressionValues(cl, esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
+    } else {
+      dvs <- discretizeExpressionValues(esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
+    }
     assign("dvs", dvs, envir = .GlobalEnv)
     #showDiscreteValues(dvs, featureNames(esRNA)[1:10])
   } else {
