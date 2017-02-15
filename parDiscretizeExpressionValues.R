@@ -63,7 +63,7 @@ skipOddValues <- function (values, skipFactor = 3)
     highBarrier
     isOutlier <- values < lowBarrier | values > highBarrier
     isOutlier
-  } else {
+  } else if (skipFactor == 0) {
     isOutlier <- rep(FALSE, length(values))
   }
   return(isOutlier)
