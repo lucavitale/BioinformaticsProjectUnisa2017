@@ -157,6 +157,6 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
       }
     }
   }
-  #file.remove("progress.log")
+  file.remove("progress.log")
   
 }
