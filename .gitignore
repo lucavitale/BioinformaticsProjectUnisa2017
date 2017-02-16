@@ -7,3 +7,4 @@ BRCA.mRNAseq_RPKM_log2.txt
 BRCA.mRNAseq_RPKM.txt
 BRCA.mRNAseq_raw_counts.txt
 progress.log
+paramList*.Rdata
