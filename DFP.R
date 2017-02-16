@@ -119,39 +119,44 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     dvs <- restoreFromDvs
   }
   
-  fps <- calculateFuzzyPatterns(esRNA, dvs, piVal, overlapping); #fps[1:30,]
-  #showFuzzyPatterns(fps, "stage i")[21:50]
-  
-  
-  dfps <- calculateDiscriminantFuzzyPattern(esRNA, fps); #dfps[1:5,]
-  #plotDiscriminantFuzzyPattern(dfps, overlapping)
-  
-  if (saveData) {
-    paramList <- list(
-      skipFactor = skipFactor,
-      zeta = zeta,
-      piVal = piVal,
-      overlapping = overlapping,
-      filterGenes = filterGenes,
-      numberOfGenes = numberOfGenes,
-      mfs = mfs,
-      dvs = dvs,
-      fps = fps,
-      dfps = dfps,
-      dataset = datasetName
-    )
+  it <- 0
+  for (val in piVal) {
+    it <- it + 1
+    print(paste("Calculating dfps", it, "of", length(piVal), "..."))
     
-    if (is.na(customFileName)) {
-      nFile <- 1
-      while (file.exists(paste("paramList", nFile, ".Rdata", sep = ""))) {
-        nFile <- nFile + 1
+    fps <- calculateFuzzyPatterns(esRNA, dvs, val, overlapping); #fps[1:30,]
+    #showFuzzyPatterns(fps, "stage i")[21:50]
+    
+    
+    dfps <- calculateDiscriminantFuzzyPattern(esRNA, fps); #dfps[1:5,]
+    #plotDiscriminantFuzzyPattern(dfps, overlapping)
+    
+    if (saveData) {
+      paramList <- list(
+        skipFactor = skipFactor,
+        zeta = zeta,
+        piVal = val,
+        overlapping = overlapping,
+        filterGenes = filterGenes,
+        numberOfGenes = numberOfGenes,
+        mfs = mfs,
+        dvs = dvs,
+        fps = fps,
+        dfps = dfps,
+        dataset = datasetName
+      )
+      
+      if (is.na(customFileName)) {
+        nFile <- 1
+        while (file.exists(paste("paramList", nFile, ".Rdata", sep = ""))) {
+          nFile <- nFile + 1
+        }
+        save(paramList, file = paste("paramList", nFile, ".Rdata", sep = ""))
+      } else {
+        save(paramList, file = customFileName)
       }
-      save(paramList, file = paste("paramList", nFile, ".Rdata", sep = ""))
-    } else {
-      save(paramList, file = customFileName)
     }
   }
+  #file.remove("progress.log")
   
-  file.remove("progress.log")
-  return(dfps)
 }
