@@ -122,7 +122,7 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
   it <- 0
   for (val in piVal) {
     it <- it + 1
-    print(paste("Calculating dfps", it, "of", length(piVal), "..."))
+    print(paste("Calculating dfps ", it, " of ", length(piVal), "...", sep = ""))
     
     fps <- calculateFuzzyPatterns(esRNA, dvs, val, overlapping); #fps[1:30,]
     #showFuzzyPatterns(fps, "stage i")[21:50]
@@ -157,6 +157,20 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
       }
     }
   }
-  file.remove("progress.log")
+  #file.remove("progress.log")
   
+}
+
+multiDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1) {
+  totalCalls <- length(skipFactor) * length(zeta) * length(overlapping)
+  i <- 0
+  for (sf in skipFactor) {
+    for (z in zeta) {
+      for (o in overlapping) {
+        i <- i + 1
+        print(paste("Call ", i, " of ", totalCalls, "...", sep = ""))
+        getDFP(RNAFinal = RNAFinal, RNAPatientsFinal = RNAPatientsFinal, datasetName = datasetName, skipFactor = sf, zeta = z, piVal = piVal, overlapping = o, filterGenes = filterGenes, saveData = saveData, core = core)
+      }
+    }
+  }
 }
