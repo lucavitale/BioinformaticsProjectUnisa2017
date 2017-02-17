@@ -3,7 +3,7 @@ getDfpsFromFiles <- function(idx) {
   for(i in idx) {
     fn <- paste("paramList", i, ".Rdata", sep = "")
     load(fn)
-    res[i] <- list(
+    res[[i]] <- list(
       skipFactor = paramList$skipFactor,
       zeta = paramList$zeta,
       piVal = paramList$piVal,
@@ -13,4 +13,15 @@ getDfpsFromFiles <- function(idx) {
     )
   }
   return(res)
+}
+
+getDfpResults <- function(idx){
+  df <- data.frame()
+  for(i in idx) {
+    fn <- paste("paramList", i, ".Rdata", sep = "")
+    load(fn)
+    df = rbind(df,data.frame(paramList$skipFactor, paramList$zeta, paramList$piVal, paramList$overlapping, nrow(paramList$dfps),fn))
+  }
+  colnames(df) <- c("skipFactor","zeta","piVal","overlapping","numGenes","fileName")
+  return(df)
 }
