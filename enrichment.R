@@ -15,3 +15,13 @@ biocarta <- egmt@result[grep(pattern = "biocarta",x = rownames(egmt@result),igno
 
 gmtfile <- system.file("extdata", "c6.all.v5.2.entrez.gmt",package="clusterProfiler")
 c6 <- read.gmt(gmtfile)
+c6 <- unique(c6$ont)
+
+
+reactomeFinal <- reactome[which(reactome$Count >=10),]
+keggFinal <- kegg[which(kegg$Count >=10),]
+c6Final <- egmt@result[egmt@result$ID %in% c6 & egmt@result$Count >= 10,]
+
+save(reactomeFinal,file="reactomeFinal.Rdata")
+save(keggFinal,file="keggFinal.Rdata")
+save(c6Final,file="c6Final.Rdata")
