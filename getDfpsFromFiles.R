@@ -11,6 +11,7 @@ getDfpsFromFiles <- function(idx) {
       dfps = paramList$dfps,
       numGenes = nrow(paramList$dfps)
     )
+    print(paste(i, "done."))
   }
   return(res)
 }
