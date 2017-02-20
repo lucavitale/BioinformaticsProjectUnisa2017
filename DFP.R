@@ -126,6 +126,11 @@ parCalculateFuzzyPatterns <- function (cluster, rmadataset, dvs, piVal = 0.9, ov
   fps <- t(simplify2array(fps))
   ifs <- t(simplify2array(ifs))
   
+  if (class(fps == "character")) { # if it's a vector, then it has only 1 row
+    fps <- matrix(fps, nrow = 1)
+    ifs <- matrix(attr(fps, "ifs"), nrow = 1)
+  }
+  
   rownames(fps) <- featureNames(rmadataset)
   head(fps)
   rownames(ifs) <- featureNames(rmadataset)
