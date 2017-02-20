@@ -44,6 +44,98 @@ parDiscretizeExpressionValues <- function(cluster, rmadataset, mfs, zeta = 0.5, 
   return(dvs)
 }
 
+parCalculateDiscriminantFuzzyPattern <- function (cluster, rmadataset, fps) 
+{
+  discriminants <- NULL
+  #for (ig in featureNames(rmadataset)) {
+  #  table.facFP <- table(factor(fps[ig, ]))
+  #  max.facFP <- ifelse(sum(table.facFP) == 0, 0, max(table.facFP))
+  #  max.facFP
+  #  if (max.facFP > 0 & max.facFP < sum(table.facFP)) 
+  #    discriminants <- c(discriminants, ig)
+  #}
+  
+  doit <- function(ig) {
+    table.facFP <- table(factor(fps[ig, ]))
+    max.facFP <- ifelse(sum(table.facFP) == 0, 0, max(table.facFP))
+    max.facFP
+    res <- NA
+    if (max.facFP > 0 & max.facFP < sum(table.facFP)) {
+      #print(paste("max:", max.facFP, "| sum:", sum(table.facFP), "max>0?", max.facFP > 0, "| max < sum?", max.facFP < sum(table.facFP)))
+      res <- ig
+    }
+    ##print("done")
+    return(res)
+  }
+  
+  discriminants <- parSapply(cluster, featureNames(rmadataset), doit)
+  discriminants <- discriminants[!is.na(discriminants)]
+  #browser()
+  dfp <- fps[discriminants, ]
+  dfp
+  attr(dfp, "ifs") <- attr(fps, "ifs")[discriminants, ]
+  dfp
+  return(dfp)
+}
+
+parCalculateFuzzyPatterns <- function (cluster, rmadataset, dvs, piVal = 0.9, overlapping = 2) 
+{
+  if (overlapping == 1) {
+    disc.alphab <- c("Low", "Medium", "High")
+  }
+  else if (overlapping == 2) {
+    disc.alphab <- c("Low", "Low-Medium", "Medium", "Medium-High", 
+                     "High")
+  }
+  else {
+    disc.alphab <- c("Low", "Low-Medium", "Low-Medium-High", 
+                     "Medium", "Medium-High", "High")
+  }
+  fps <- NULL
+  ifs <- NULL
+  #for (ig in featureNames(rmadataset)) {
+  #  disc.values <- dvs[ig, ]
+  #  disc.values
+  #  attr(disc.values, "types") <- attr(dvs, "types")
+  #  disc.values
+  #  fuzzypat <- .fuzzyPatterns(disc.values, disc.alphab, 
+  #                             piVal)
+  #  fuzzypat
+  #  fps <- rbind(fps, fuzzypat)
+  #  fps
+  #  ifs <- rbind(ifs, attr(fuzzypat, "ifs"))
+  #  ifs
+  #}
+  
+  doit <- function(ig) {
+    disc.values <- dvs[ig, ]
+    disc.values
+    attr(disc.values, "types") <- attr(dvs, "types")
+    disc.values
+    fuzzypat <- DFP:::.fuzzyPatterns(disc.values, disc.alphab, 
+                               piVal)
+    fuzzypat
+    #print(paste(fuzzypat, "|", attr(fuzzypat, "ifs")))
+    return(list(fuzzypat, attr(fuzzypat, "ifs")))
+  }
+  
+  result <- parLapply(cluster, featureNames(rmadataset), doit)
+  
+  fps <- parLapply(cluster, result, "[[", 1)
+  ifs <- parLapply(cluster, result, "[[", 2)
+  fps <- t(simplify2array(fps))
+  ifs <- t(simplify2array(ifs))
+  
+  rownames(fps) <- featureNames(rmadataset)
+  head(fps)
+  rownames(ifs) <- featureNames(rmadataset)
+  head(ifs)
+  attr(fps, "ifs") <- ifs
+  head(fps)
+  return(fps)
+}
+
+
 skipOddValues <- function (values, skipFactor = 3) 
 {
   if (skipFactor > 0) {
@@ -124,12 +216,25 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     it <- it + 1
     print(paste("Calculating dfps ", it, " of ", length(piVal), "...", sep = ""))
     
-    fps <- calculateFuzzyPatterns(esRNA, dvs, val, overlapping); #fps[1:30,]
-    #showFuzzyPatterns(fps, "stage i")[21:50]
+    if (core > 1) {
+      #cl <- makeCluster(core, outfile = "progressFP.log")
+      cl <- makeCluster(core)
+      fps <- parCalculateFuzzyPatterns(cl, esRNA, dvs, val, overlapping);
+      stopCluster(cl)
+    } else {
+      fps <- calculateFuzzyPatterns(esRNA, dvs, val, overlapping); #fps[1:30,]
+      #showFuzzyPatterns(fps, "stage i")[21:50]
+    }
     
-    
-    dfps <- calculateDiscriminantFuzzyPattern(esRNA, fps); #dfps[1:5,]
-    #plotDiscriminantFuzzyPattern(dfps, overlapping)
+    if (core > 1) {
+      #cl <- makeCluster(core, outfile = "progressDFP.log")
+      cl <- makeCluster(core)
+      dfps <- parCalculateDiscriminantFuzzyPattern(cl, esRNA, fps);
+      stopCluster(cl)
+    } else {
+      dfps <- calculateDiscriminantFuzzyPattern(esRNA, fps); #dfps[1:5,]
+      #plotDiscriminantFuzzyPattern(dfps, overlapping)
+    }
     
     if (saveData) {
       paramList <- list(
@@ -156,6 +261,8 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
         save(paramList, file = customFileName)
       }
     }
+    
+    gc() # execute garbage collection between calls
   }
   #file.remove("progress.log")
   
