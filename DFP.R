@@ -187,22 +187,24 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     esRNA <- ExpressionSet(as.matrix(RNAFinal),phenoData = phenoData)
   }
   
-  mfs <- calculateMembershipFunctions(esRNA, skipFactor); mfs[[1]]
-  if (filterGenes) {
-    toremove <- c()
-    for(i in 1:length(mfs)){
-      if (is.na(mfs[[i]]$lel@center))
-        toremove <- c(toremove, i)
-    }
-    mfs <- mfs[-toremove]
-    RNAReduced <- RNAReduced[-toremove,]
-    esRNA <- ExpressionSet(as.matrix(RNAReduced),phenoData = phenoData)
-  }
-  
-  print(paste("Number of selected genes:", nrow(RNAReduced)))
-  #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
-  
   if (class(restoreFromDvs) != "matrix" && is.na(restoreFromDvs)) {
+    mfs <- calculateMembershipFunctions(esRNA, skipFactor); #mfs[[1]]
+    if (filterGenes) {
+      toremove <- c()
+      for(i in 1:length(mfs)){
+        if (is.na(mfs[[i]]$lel@center))
+          toremove <- c(toremove, i)
+      }
+      if (length(toremove) > 0) {
+        mfs <- mfs[-toremove]
+        RNAReduced <- RNAReduced[-toremove,]
+      }
+      esRNA <- ExpressionSet(as.matrix(RNAReduced),phenoData = phenoData)
+    }
+    
+    print(paste("Number of selected genes:", nrow(RNAReduced)))
+    #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
+  
     if (core > 1) {
       cl <- makeCluster(core, outfile = "progress.log")
       dvs <- parDiscretizeExpressionValues(cl, esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
