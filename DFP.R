@@ -284,6 +284,7 @@ multiDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, skipFactor = 3, ze
         i <- i + 1
         print(paste("Call ", i, " of ", totalCalls, "...", sep = ""))
         getDFP(RNAFinal = RNAFinal, RNAPatientsFinal = RNAPatientsFinal, datasetName = datasetName, skipFactor = sf, zeta = z, piVal = piVal, overlapping = o, filterGenes = filterGenes, saveData = saveData, core = core)
+        file.remove("progress.log")
       }
     }
   }
