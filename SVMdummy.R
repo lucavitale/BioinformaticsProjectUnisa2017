@@ -6,11 +6,14 @@ library(e1071)
 #testset <- Rsvm[testindex,c(1:nvar,ncol(Rsvm))]
 #trainset <- Rsvm[-testindex,c(1:nvar,ncol(Rsvm))]
 
-trainset <- as.data.frame(t(rnanorm[rownames(paramList$dfps),trainingIdx]))
-trainset$classes <- RNAPatientsFinal[trainingIdx,"stageClass"]
-testset <- as.data.frame(t(rnanorm[rownames(paramList$dfps),-trainingIdx]))
-testset$classes <- RNAPatientsFinal[-trainingIdx,"stageClass"]
+cl13 <- which(RNAPatientsFinal$stageClass %in% c("stage i", "stage iii"))
+cl2 <- which(RNAPatientsFinal$stageClass %in% c("stage ii"))
 
-svm.model <- svm(classes ~ ., data = trainset, cost = 1e12, gamma = 1, kernel="radial")
+trainset <- as.data.frame(t(rnanorm[rownames(paramList$dfps),intersect(trainingIdx,cl13)]))
+trainset$classes <- RNAPatientsFinal[intersect(trainingIdx,cl13),"stageClass"]
+testset <- as.data.frame(t(rnanorm[rownames(paramList$dfps),-c(intersect(trainingIdx,cl13),cl2)]))
+testset$classes <- RNAPatientsFinal[-c(intersect(trainingIdx,cl13),cl2),"stageClass"]
+
+svm.model <- svm(classes ~ ., data = trainset, cost = 1)
 svm.pred <- predict(svm.model, testset[,-(ncol(testset))])
 table(pred = svm.pred, true = testset[,(ncol(testset))])
