@@ -1,0 +1,2070 @@
+$GSM553379
+$GSM553379$massimo
+LumA 
+   3 
+
+$GSM553379$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43834129 -0.29570126  0.48892749  0.16304820  0.04874077 
+
+
+$GSM553348
+$GSM553348$massimo
+LumA 
+   3 
+
+$GSM553348$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43095962 -0.25607903  0.51204950  0.13080764  0.06817195 
+
+
+$GSM553380
+$GSM553380$massimo
+LumB 
+   4 
+
+$GSM553380$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43953539 -0.04754668  0.23469388  0.39676509 -0.27290491 
+
+
+$GSM553325
+$GSM553325$massimo
+LumA 
+   3 
+
+$GSM553325$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.25162831 -0.27887538  0.49696049 -0.04624403  0.23198003 
+
+
+$GSM553263
+$GSM553263$massimo
+LumA 
+   3 
+
+$GSM553263$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.27040816 -0.36224490  0.49272688 -0.07099436  0.24446374 
+
+
+$GSM553337
+$GSM553337$massimo
+LumA 
+   3 
+
+$GSM553337$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.34433348 -0.20429874  0.35193226  0.17943986 -0.02616153 
+
+
+$GSM553349
+$GSM553349$massimo
+Normal 
+     5 
+
+$GSM553349$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.04635258 -0.46678246  0.38341294 -0.18975250  0.40067304 
+
+
+$GSM553350
+$GSM553350$massimo
+LumA 
+   3 
+
+$GSM553350$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.26139818 -0.34628745  0.48154581 -0.08445506  0.24511507 
+
+
+$GSM553289
+$GSM553289$massimo
+Her2 
+   2 
+
+$GSM553289$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.13873209  0.26823708 -0.07164568  0.25966131 -0.26498046 
+
+
+$GSM553326
+$GSM553326$massimo
+LumA 
+   3 
+
+$GSM553326$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.25565175 -0.32084023  0.39910983  0.02491383  0.15691915 
+
+
+$GSM553305
+$GSM553305$massimo
+Basal 
+    1 
+
+$GSM553305$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.31654364 -0.09986974 -0.25423361 -0.04168476  0.03517152 
+
+
+$GSM553381
+$GSM553381$massimo
+LumB 
+   4 
+
+$GSM553381$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.39958749 -0.01476335  0.17650890  0.48784195 -0.33478072 
+
+
+$GSM553212
+$GSM553212$massimo
+LumA 
+   3 
+
+$GSM553212$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.27822406 -0.33564915  0.37483717  0.06122449  0.10062961 
+
+
+$GSM553327
+$GSM553327$massimo
+LumA 
+   3 
+
+$GSM553327$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.35475467 -0.27757273  0.41478506  0.18063396  0.04808945 
+
+
+$GSM553185
+$GSM553185$massimo
+LumA 
+   3 
+
+$GSM553185$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4833501 -0.1891606  0.3828263  0.3472739 -0.1619671 
+
+
+$GSM553211
+$GSM553211$massimo
+LumA 
+   3 
+
+$GSM553211$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.30319149 -0.27605297  0.35084672  0.08532349  0.02051672 
+
+
+$GSM553386
+$GSM553386$massimo
+LumB 
+   4 
+
+$GSM553386$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4189101  0.3012375  0.1083370  0.4291142 -0.3605080 
+
+
+$GSM553387
+$GSM553387$massimo
+LumB 
+   4 
+
+$GSM553387$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36539297 -0.01367781  0.15078159  0.45766392 -0.26248372 
+
+
+$GSM553244
+$GSM553244$massimo
+LumA 
+   3 
+
+$GSM553244$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36430743 -0.16261398  0.35562310  0.23132870 -0.04255319 
+
+
+$GSM553354
+$GSM553354$massimo
+LumB 
+   4 
+
+$GSM553354$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.22014763  0.02301346  0.02529310  0.34910986 -0.30612245 
+
+
+$GSM553388
+$GSM553388$massimo
+LumA 
+   3 
+
+$GSM553388$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.449305254 -0.235779418  0.488493270  0.200065132 -0.004450716 
+
+
+$GSM553357
+$GSM553357$massimo
+Basal 
+    1 
+
+$GSM553357$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.44452888 -0.21385150 -0.32207990 -0.10128094  0.07283977 
+
+
+$GSM553258
+$GSM553258$massimo
+LumA 
+   3 
+
+$GSM553258$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.291359097 -0.250217108  0.318063396  0.137972210  0.005319149 
+
+
+$GSM553382
+$GSM553382$massimo
+LumA 
+   3 
+
+$GSM553382$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2786658 -0.4458979  0.5755692 -0.2364372  0.4399815 
+
+
+$GSM553203
+$GSM553203$massimo
+LumB 
+   4 
+
+$GSM553203$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.28702472  0.21195755  0.07848672  0.28132548 -0.22661275 
+
+
+$GSM553389
+$GSM553389$massimo
+LumA 
+   3 
+
+$GSM553389$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.211571863 -0.078050369  0.273990447  0.007815892  0.049066435 
+
+
+$GSM553383
+$GSM553383$massimo
+LumB 
+   4 
+
+$GSM553383$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4118653 -0.1037262  0.3013000  0.3403262 -0.1693489 
+
+
+$GSM553390
+$GSM553390$massimo
+LumB 
+   4 
+
+$GSM553390$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.34541902 -0.07533652  0.21765089  0.27963526 -0.18063396 
+
+
+$GSM553297
+$GSM553297$massimo
+LumA 
+   3 
+
+$GSM553297$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.464394268 -0.098567086  0.413048198  0.161854103 -0.007273122 
+
+
+$GSM553290
+$GSM553290$massimo
+Basal 
+    1 
+
+$GSM553290$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3988276 -0.2471776 -0.1826965 -0.2328485  0.2257924 
+
+
+$GSM553391
+$GSM553391$massimo
+LumB 
+   4 
+
+$GSM553391$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.47546678  0.05829353  0.29548415  0.36875814 -0.23067738 
+
+
+$GSM553394
+$GSM553394$massimo
+LumB 
+   4 
+
+$GSM553394$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.41196266  0.10866261  0.08119844  0.50358228 -0.40794616 
+
+
+$GSM553373
+$GSM553373$massimo
+LumA 
+   3 
+
+$GSM553373$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.1931177 -0.4757924  0.4526704 -0.1045376  0.3525836 
+
+
+$GSM553345
+$GSM553345$massimo
+LumA 
+   3 
+
+$GSM553345$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2865827 -0.4023013  0.5096613 -0.0080330  0.1940947 
+
+
+$GSM553374
+$GSM553374$massimo
+LumB 
+   4 
+
+$GSM553374$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.51009553  0.09704733  0.27453322  0.43758142 -0.29678680 
+
+
+$GSM553306
+$GSM553306$massimo
+LumA 
+   3 
+
+$GSM553306$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.15273556 -0.31665219  0.21222319  0.05525402  0.08478072 
+
+
+$GSM553375
+$GSM553375$massimo
+Basal 
+    1 
+
+$GSM553375$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.42857143 -0.17184108 -0.32056014 -0.12027790  0.05145462 
+
+
+$GSM553363
+$GSM553363$massimo
+LumB 
+   4 
+
+$GSM553363$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.39698220  0.02789839  0.08706036  0.52529310 -0.37961355 
+
+
+$GSM553364
+$GSM553364$massimo
+LumA 
+   3 
+
+$GSM553364$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.28853669 -0.01096396  0.31046461  0.06784629  0.01943118 
+
+
+$GSM553392
+$GSM553392$massimo
+LumB 
+   4 
+
+$GSM553392$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2745332 -0.1240773  0.1277681  0.3444420 -0.2479375 
+
+
+$GSM553395
+$GSM553395$massimo
+LumB 
+   4 
+
+$GSM553395$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.09965263  0.27735562 -0.17835432  0.34259661 -0.39958749 
+
+
+$GSM553368
+$GSM553368$massimo
+LumA 
+   3 
+
+$GSM553368$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.420321320 -0.213200174  0.456795484  0.157837603  0.005536257 
+
+
+$GSM553351
+$GSM553351$massimo
+LumA 
+   3 
+
+$GSM553351$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3213200 -0.4202128  0.5715371 -0.1018237  0.2833261 
+
+
+$GSM553292
+$GSM553292$massimo
+LumA 
+   3 
+
+$GSM553292$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4741641 -0.3472644  0.6061659  0.0401650  0.1528441 
+
+
+$GSM553226
+$GSM553226$massimo
+LumB 
+   4 
+
+$GSM553226$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.41185410  0.01411203  0.23762484  0.35974815 -0.20603561 
+
+
+$GSM553311
+$GSM553311$massimo
+LumA 
+   3 
+
+$GSM553311$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2870169 -0.4521277  0.5552540 -0.1049718  0.3330439 
+
+
+$GSM553369
+$GSM553369$massimo
+Her2 
+   2 
+
+$GSM553369$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.19311767  0.16207121  0.10844551  0.07479375 -0.07403387 
+
+
+$GSM553204
+$GSM553204$massimo
+LumA 
+   3 
+
+$GSM553204$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4014329 -0.1534954  0.3125271  0.3059053 -0.1619627 
+
+
+$GSM553227
+$GSM553227$massimo
+Basal 
+    1 
+
+$GSM553227$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3859097 -0.2249240 -0.1953973 -0.1344985  0.1716240 
+
+
+$GSM553245
+$GSM553245$massimo
+Basal 
+    1 
+
+$GSM553245$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.4094659 -0.1779201 -0.2727964 -0.1366696  0.1315675 
+
+
+$GSM553342
+$GSM553342$massimo
+Basal 
+    1 
+
+$GSM553342$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.24956578 -0.17607469 -0.07577073 -0.20929223  0.17694312 
+
+
+$GSM553358
+$GSM553358$massimo
+LumA 
+   3 
+
+$GSM553358$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3866696 -0.2424012  0.3208858  0.2960269 -0.1145245 
+
+
+$GSM553384
+$GSM553384$massimo
+Basal 
+    1 
+
+$GSM553384$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.2582501 -0.2389275 -0.1005211 -0.1445940  0.1448111 
+
+
+$GSM553355
+$GSM553355$massimo
+LumA 
+   3 
+
+$GSM553355$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.44876248 -0.21917065  0.36506730  0.24598350 -0.08847156 
+
+
+$GSM553281
+$GSM553281$massimo
+LumA 
+   3 
+
+$GSM553281$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.07815892 -0.48284846  0.35334347 -0.11550152  0.30069475 
+
+
+$GSM553233
+$GSM553233$massimo
+LumA 
+   3 
+
+$GSM553233$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.46873643 -0.25293096  0.47307859  0.22514112 -0.05004342 
+
+
+$GSM553205
+$GSM553205$massimo
+Basal 
+    1 
+
+$GSM553205$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.15881459 -0.27333912  0.05666522 -0.08130699  0.15414677 
+
+
+$GSM553220
+$GSM553220$massimo
+Basal 
+    1 
+
+$GSM553220$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.32359965 -0.02453322 -0.38623535  0.15262701 -0.13590968 
+
+
+$GSM553385
+$GSM553385$massimo
+Basal 
+    1 
+
+$GSM553385$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.04439861 -0.05275727 -0.06676075  0.03528007 -0.06122449 
+
+
+$GSM553284
+$GSM553284$massimo
+LumA 
+   3 
+
+$GSM553284$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.37147199 -0.22622666  0.32066869  0.25217108 -0.06676075 
+
+
+$GSM553356
+$GSM553356$massimo
+LumB 
+   4 
+
+$GSM553356$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.09661574 -0.03810351 -0.17700220  0.11056531 -0.14888593 
+
+
+$GSM553188
+$GSM553188$massimo
+LumA 
+   3 
+
+$GSM553188$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.29114199 -0.32066869  0.42379505  0.10388624  0.09541902 
+
+
+$GSM553234
+$GSM553234$massimo
+LumA 
+   3 
+
+$GSM553234$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.47286149 -0.28712549  0.56187581  0.08977421  0.08347807 
+
+
+$GSM553259
+$GSM553259$massimo
+Basal 
+    1 
+
+$GSM553259$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.31274425 -0.12440295 -0.29798089  0.02138515 -0.04222753 
+
+
+$GSM553272
+$GSM553272$massimo
+LumA 
+   3 
+
+$GSM553272$correlazioni
+        Basal          Her2          LumA          LumB        Normal 
+-0.3773339123 -0.4065349544  0.5995440729  0.0004342162  0.1988710378 
+
+
+$GSM553338
+$GSM553338$massimo
+LumA 
+   3 
+
+$GSM553338$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2376856  0.1542052  0.1685348  0.1363476 -0.1238093 
+
+
+$GSM553217
+$GSM553217$massimo
+LumA 
+   3 
+
+$GSM553217$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4483283 -0.3315241  0.6489362  0.0333261  0.1650022 
+
+
+$GSM553194
+$GSM553194$massimo
+LumA 
+   3 
+
+$GSM553194$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.34726444 -0.37863656  0.46428571  0.04591837  0.17401216 
+
+
+$GSM553393
+$GSM553393$massimo
+LumB 
+   4 
+
+$GSM553393$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.45353886  0.01758576  0.31578376  0.35584021 -0.21363439 
+
+
+$GSM553192
+$GSM553192$massimo
+LumB 
+   4 
+
+$GSM553192$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4458315  0.2252497  0.2103778  0.3602909 -0.2955927 
+
+
+$GSM553298
+$GSM553298$massimo
+Basal 
+    1 
+
+$GSM553298$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.21146331 -0.38688667 -0.01650022 -0.14350847  0.14578810 
+
+
+$GSM553235
+$GSM553235$massimo
+LumB 
+   4 
+
+$GSM553235$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3402084 -0.2087495  0.2616153  0.2898393 -0.1161528 
+
+
+$GSM553195
+$GSM553195$massimo
+LumB 
+   4 
+
+$GSM553195$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4277030 -0.1606600  0.2519540  0.3633304 -0.1898611 
+
+
+$GSM553248
+$GSM553248$massimo
+LumB 
+   4 
+
+$GSM553248$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3828702 -0.1905124  0.2850630  0.2851715 -0.1050803 
+
+
+$GSM553246
+$GSM553246$massimo
+LumB 
+   4 
+
+$GSM553246$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.08803734 -0.27865827  0.10160660  0.15219279  0.09617890 
+
+
+$GSM553236
+$GSM553236$massimo
+Basal 
+    1 
+
+$GSM553236$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3233825 -0.1461138 -0.1159357 -0.1712983  0.1593574 
+
+
+$GSM553299
+$GSM553299$massimo
+LumB 
+   4 
+
+$GSM553299$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36224490 -0.07479375  0.13167607  0.40121581 -0.27920104 
+
+
+$GSM553186
+$GSM553186$massimo
+LumA 
+   3 
+
+$GSM553186$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.40594892 -0.02382826  0.30466524  0.27839444 -0.15990447 
+
+
+$GSM553359
+$GSM553359$massimo
+LumA 
+   3 
+
+$GSM553359$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.26042119 -0.36300478  0.36213634  0.09921841  0.10562310 
+
+
+$GSM553247
+$GSM553247$massimo
+LumA 
+   3 
+
+$GSM553247$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.394376900 -0.232739904  0.382001737  0.168475901  0.003256622 
+
+
+$GSM553328
+$GSM553328$massimo
+LumB 
+   4 
+
+$GSM553328$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.32381676 -0.02301346  0.20592705  0.29548415 -0.17466348 
+
+
+$GSM553333
+$GSM553333$massimo
+LumB 
+   4 
+
+$GSM553333$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.283326096 -0.003365176  0.019865393  0.442792010 -0.379939210 
+
+
+$GSM553285
+$GSM553285$massimo
+LumB 
+   4 
+
+$GSM553285$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.42412071  0.05612245  0.17748589  0.49424663 -0.32457664 
+
+
+$GSM553260
+$GSM553260$massimo
+LumA 
+   3 
+
+$GSM553260$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3500868 -0.4320452  0.6562093 -0.1035606  0.3685410 
+
+
+$GSM553273
+$GSM553273$massimo
+LumA 
+   3 
+
+$GSM553273$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.42694312 -0.42455493  0.57946157  0.08336952  0.13124186 
+
+
+$GSM553228
+$GSM553228$massimo
+LumA 
+   3 
+
+$GSM553228$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2572731 -0.4222753  0.5487408 -0.1020408  0.3199088 
+
+
+$GSM553213
+$GSM553213$massimo
+LumA 
+   3 
+
+$GSM553213$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.47633521 -0.31838906  0.58575771  0.09954407  0.07164568 
+
+
+$GSM553206
+$GSM553206$massimo
+LumA 
+   3 
+
+$GSM553206$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.33267295 -0.33810080  0.43998155  0.06182321  0.10801422 
+
+
+$GSM553207
+$GSM553207$massimo
+LumB 
+   4 
+
+$GSM553207$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.40284412 -0.04526704  0.27670430  0.35681719 -0.22622666 
+
+
+$GSM553314
+$GSM553314$massimo
+LumA 
+   3 
+
+$GSM553314$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.26443769  0.04667825  0.18052540  0.14524533 -0.06567521 
+
+
+$GSM553189
+$GSM553189$massimo
+Basal 
+    1 
+
+$GSM553189$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.40056448 -0.10573165 -0.36148502  0.06838906 -0.04939210 
+
+
+$GSM553320
+$GSM553320$massimo
+LumB 
+   4 
+
+$GSM553320$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.25781589 -0.16934433  0.15327833  0.18844985 -0.07099436 
+
+
+$GSM553249
+$GSM553249$massimo
+LumA 
+   3 
+
+$GSM553249$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.37939644 -0.33890578  0.47427269  0.05905341  0.14947894 
+
+
+$GSM553360
+$GSM553360$massimo
+LumA 
+   3 
+
+$GSM553360$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.33966565 -0.32794182  0.37342597  0.11810682  0.08716891 
+
+
+$GSM553250
+$GSM553250$massimo
+Basal 
+    1 
+
+$GSM553250$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3106817 -0.2845202 -0.1277681 -0.1141989  0.1479592 
+
+
+$GSM553339
+$GSM553339$massimo
+LumA 
+   3 
+
+$GSM553339$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.14633087 -0.43323925  0.35660009 -0.06762918  0.25662180 
+
+
+$GSM553340
+$GSM553340$massimo
+LumB 
+   4 
+
+$GSM553340$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+ 0.004884933 -0.039405124 -0.024099001  0.073599653 -0.087277464 
+
+
+$GSM553196
+$GSM553196$massimo
+LumA 
+   3 
+
+$GSM553196$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.40523231 -0.20049935  0.27865827  0.27279635 -0.09248806 
+
+
+$GSM553371
+$GSM553371$massimo
+LumA 
+   3 
+
+$GSM553371$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.05031617 -0.26759302  0.23280050 -0.09922110  0.21298885 
+
+
+$GSM553237
+$GSM553237$massimo
+LumA 
+   3 
+
+$GSM553237$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2161311 -0.5717542  0.6285280 -0.2585758  0.5275727 
+
+
+$GSM553378
+$GSM553378$massimo
+LumB 
+   4 
+
+$GSM553378$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4201042 -0.1284195  0.2311116  0.3765740 -0.1949631 
+
+
+$GSM553251
+$GSM553251$massimo
+LumA 
+   3 
+
+$GSM553251$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43779852 -0.33434650  0.59009987  0.03202345  0.16880156 
+
+
+$GSM553343
+$GSM553343$massimo
+LumA 
+   3 
+
+$GSM553343$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.32957013 -0.28278333  0.37462006  0.14068606  0.02496743 
+
+
+$GSM553300
+$GSM553300$massimo
+LumA 
+   3 
+
+$GSM553300$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.37006079 -0.29559271  0.40240990  0.22297004 -0.05471125 
+
+
+$GSM553352
+$GSM553352$massimo
+LumB 
+   4 
+
+$GSM553352$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3695180 -0.1389492  0.2221016  0.3600738 -0.2375163 
+
+
+$GSM553321
+$GSM553321$massimo
+Normal 
+     5 
+
+$GSM553321$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.05178029 -0.15479809  0.04678680 -0.08749457  0.13178463 
+
+
+$GSM553329
+$GSM553329$massimo
+Basal 
+    1 
+
+$GSM553329$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.36300478 -0.15392966 -0.18931828 -0.10019540  0.08890578 
+
+
+$GSM553396
+$GSM553396$massimo
+LumA 
+   3 
+
+$GSM553396$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.34161963 -0.38048198  0.60247503 -0.05677377  0.29624403 
+
+
+$GSM553301
+$GSM553301$massimo
+LumA 
+   3 
+
+$GSM553301$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.400347373 -0.246634824  0.369843682  0.239470256 -0.008575771 
+
+
+$GSM553252
+$GSM553252$massimo
+LumA 
+   3 
+
+$GSM553252$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.32273122 -0.36854103  0.40848893  0.10258359  0.06556665 
+
+
+$GSM553344
+$GSM553344$massimo
+LumA 
+   3 
+
+$GSM553344$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.26052974 -0.21222319  0.36680417  0.09476769  0.07718194 
+
+
+$GSM553274
+$GSM553274$massimo
+LumA 
+   3 
+
+$GSM553274$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.25694746 -0.28104646  0.28169779  0.13417282  0.00293096 
+
+
+$GSM553307
+$GSM553307$massimo
+LumA 
+   3 
+
+$GSM553307$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.46679513 -0.29929167  0.50533286  0.20891796 -0.01476375 
+
+
+$GSM553266
+$GSM553266$massimo
+LumA 
+   3 
+
+$GSM553266$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.461571863 -0.287559705  0.458749457  0.197785497 -0.003799392 
+
+
+$GSM553286
+$GSM553286$massimo
+LumB 
+   4 
+
+$GSM553286$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.47850630 -0.07924446  0.25086843  0.41630482 -0.29559271 
+
+
+$GSM553221
+$GSM553221$massimo
+Her2 
+   2 
+
+$GSM553221$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.11832393  0.30872775 -0.09465914  0.20440729 -0.29146765 
+
+
+$GSM553312
+$GSM553312$massimo
+Normal 
+     5 
+
+$GSM553312$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.1756405 -0.4001303  0.1046461 -0.2221016  0.3407512 
+
+
+$GSM553261
+$GSM553261$massimo
+LumA 
+   3 
+
+$GSM553261$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.24500651  0.11626140  0.18432479  0.13894920 -0.08478072 
+
+
+$GSM553330
+$GSM553330$massimo
+LumA 
+   3 
+
+$GSM553330$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3431394 -0.3241424  0.4424663  0.1764003  0.0255102 
+
+
+$GSM553315
+$GSM553315$massimo
+LumA 
+   3 
+
+$GSM553315$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.39296570 -0.22904907  0.43812419  0.14079462  0.03582284 
+
+
+$GSM553316
+$GSM553316$massimo
+LumA 
+   3 
+
+$GSM553316$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.1707555 -0.3202345  0.3394485 -0.1122449  0.2683456 
+
+
+$GSM553370
+$GSM553370$massimo
+LumA 
+   3 
+
+$GSM553370$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.46200608 -0.23957881  0.49565784  0.14643943  0.02171081 
+
+
+$GSM553366
+$GSM553366$massimo
+Basal 
+    1 
+
+$GSM553366$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.4299826 -0.2302432 -0.2173252 -0.2022362  0.1984368 
+
+
+$GSM553238
+$GSM553238$massimo
+LumA 
+   3 
+
+$GSM553238$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.38297872 -0.36387321  0.57631350 -0.07023448  0.22123317 
+
+
+$GSM553322
+$GSM553322$massimo
+Normal 
+     5 
+
+$GSM553322$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.1031264 -0.3906861  0.1739036 -0.1595745  0.2564047 
+
+
+$GSM553293
+$GSM553293$massimo
+LumA 
+   3 
+
+$GSM553293$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4621146 -0.2155884  0.4332393  0.2028875 -0.0481980 
+
+
+$GSM553361
+$GSM553361$massimo
+LumB 
+   4 
+
+$GSM553361$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3854859 -0.1551822  0.2444161  0.2967406 -0.1317339 
+
+
+$GSM553287
+$GSM553287$massimo
+LumB 
+   4 
+
+$GSM553287$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.44702562  0.07501086  0.25412505  0.36050803 -0.26519757 
+
+
+$GSM553302
+$GSM553302$massimo
+Her2 
+   2 
+
+$GSM553302$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.058510638  0.101606600  0.065132436  0.003365176 -0.014546244 
+
+
+$GSM553294
+$GSM553294$massimo
+LumB 
+   4 
+
+$GSM553294$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.30232306 -0.04993487  0.08119844  0.38113330 -0.23013461 
+
+
+$GSM553372
+$GSM553372$massimo
+LumA 
+   3 
+
+$GSM553372$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.32643092 -0.20718105  0.30629359  0.24305914 -0.07881239 
+
+
+$GSM553295
+$GSM553295$massimo
+LumB 
+   4 
+
+$GSM553295$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3423795 -0.1602258  0.2186279  0.3412940 -0.1842162 
+
+
+$GSM553317
+$GSM553317$massimo
+LumB 
+   4 
+
+$GSM553317$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3713634 -0.1576205  0.2236214  0.3478072 -0.2067955 
+
+
+$GSM553331
+$GSM553331$massimo
+Basal 
+    1 
+
+$GSM553331$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3075337 -0.2954842 -0.1099653 -0.1834564  0.2000651 
+
+
+$GSM553208
+$GSM553208$massimo
+LumB 
+   4 
+
+$GSM553208$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.47796353  0.02203647  0.30232306  0.37689970 -0.21482848 
+
+
+$GSM553332
+$GSM553332$massimo
+LumA 
+   3 
+
+$GSM553332$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2314373 -0.4871906  0.5626357 -0.1873643  0.3963309 
+
+
+$GSM553197
+$GSM553197$massimo
+LumA 
+   3 
+
+$GSM553197$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.44290056 -0.42835432  0.65208424 -0.03517152  0.27475033 
+
+
+$GSM553222
+$GSM553222$massimo
+LumB 
+   4 
+
+$GSM553222$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3218628  0.2092922  0.1147416  0.3686496 -0.3417282 
+
+
+$GSM553303
+$GSM553303$massimo
+LumB 
+   4 
+
+$GSM553303$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.1018237 -0.0949848 -0.2513026  0.1483934 -0.1257056 
+
+
+$GSM553214
+$GSM553214$massimo
+Basal 
+    1 
+
+$GSM553214$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.27366479 -0.26411203 -0.05644811 -0.14741641  0.16619627 
+
+
+$GSM553267
+$GSM553267$massimo
+Basal 
+    1 
+
+$GSM553267$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3140469 -0.2056014 -0.1740122 -0.1222319  0.1521928 
+
+
+$GSM553190
+$GSM553190$massimo
+Basal 
+    1 
+
+$GSM553190$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3487842 -0.2834347 -0.1526270 -0.1417716  0.1621798 
+
+
+$GSM553341
+$GSM553341$massimo
+LumA 
+   3 
+
+$GSM553341$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36995224 -0.37299175  0.54168476  0.05937907  0.17987408 
+
+
+$GSM553239
+$GSM553239$massimo
+LumA 
+   3 
+
+$GSM553239$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.39871906 -0.04168476  0.35464611  0.16489362 -0.05047764 
+
+
+$GSM553308
+$GSM553308$massimo
+Normal 
+     5 
+
+$GSM553308$correlazioni
+        Basal          Her2          LumA          LumB        Normal 
+ 0.1024750326 -0.2104863222  0.0002171081 -0.1303734260  0.1473078593 
+
+
+$GSM553268
+$GSM553268$massimo
+LumA 
+   3 
+
+$GSM553268$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.361919236 -0.408380373  0.515197568  0.002713851  0.147959184 
+
+
+$GSM553184
+$GSM553184$massimo
+Her2 
+   2 
+
+$GSM553184$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.0132436  0.1531698 -0.1688016  0.1457881 -0.2448980 
+
+
+$GSM553191
+$GSM553191$massimo
+LumA 
+   3 
+
+$GSM553191$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.42564047  0.07783326  0.32620495  0.27355623 -0.14958749 
+
+
+$GSM553199
+$GSM553199$massimo
+Her2 
+   2 
+
+$GSM553199$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.15230135  0.16630482  0.06784629  0.08803734 -0.13395571 
+
+
+$GSM553253
+$GSM553253$massimo
+LumA 
+   3 
+
+$GSM553253$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.31828050 -0.07989579  0.26552323  0.24511507 -0.12711680 
+
+
+$GSM553240
+$GSM553240$massimo
+LumB 
+   4 
+
+$GSM553240$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4906644 -0.1525185  0.3180634  0.3370604 -0.1613113 
+
+
+$GSM553275
+$GSM553275$massimo
+LumB 
+   4 
+
+$GSM553275$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4950065 -0.1098567  0.3011290  0.4292228 -0.2618324 
+
+
+$GSM553209
+$GSM553209$massimo
+LumA 
+   3 
+
+$GSM553209$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.448219713 -0.254342162  0.469604863  0.181068172  0.006621798 
+
+
+$GSM553218
+$GSM553218$massimo
+LumA 
+   3 
+
+$GSM553218$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.41836735 -0.20950934  0.39383413  0.25553626 -0.09303083 
+
+
+$GSM553254
+$GSM553254$massimo
+LumB 
+   4 
+
+$GSM553254$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3996960 -0.0801129  0.3263135  0.3281589 -0.1120278 
+
+
+$GSM553276
+$GSM553276$massimo
+LumA 
+   3 
+
+$GSM553276$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36897525 -0.31513244  0.38102475  0.19148936 -0.01411203 
+
+
+$GSM553296
+$GSM553296$massimo
+LumA 
+   3 
+
+$GSM553296$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2065840 -0.4496431  0.4824816 -0.1271203  0.3289277 
+
+
+$GSM553241
+$GSM553241$massimo
+Basal 
+    1 
+
+$GSM553241$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.22416413 -0.31676075 -0.06415545 -0.05026053  0.15762050 
+
+
+$GSM553323
+$GSM553323$massimo
+LumA 
+   3 
+
+$GSM553323$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.239687364 -0.373860182  0.399696049  0.007273122  0.188232740 
+
+
+$GSM553277
+$GSM553277$massimo
+LumB 
+   4 
+
+$GSM553277$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4934868 -0.1098567  0.3049284  0.3765740 -0.2462006 
+
+
+$GSM553397
+$GSM553397$massimo
+LumA 
+   3 
+
+$GSM553397$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.362353452 -0.464502822  0.556773773  0.004125054  0.210594876 
+
+
+$GSM553242
+$GSM553242$massimo
+LumA 
+   3 
+
+$GSM553242$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.5245332 -0.3078593  0.5059705  0.2344768 -0.0212766 
+
+
+$GSM553200
+$GSM553200$massimo
+LumB 
+   4 
+
+$GSM553200$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3784195 -0.1820452  0.2321971  0.3602909 -0.1829136 
+
+
+$GSM553219
+$GSM553219$massimo
+Basal 
+    1 
+
+$GSM553219$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+ 0.223838472 -0.147307859 -0.149370386  0.002062527 -0.004450716 
+
+
+$GSM553269
+$GSM553269$massimo
+LumB 
+   4 
+
+$GSM553269$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3846070 -0.1350413  0.2802866  0.3452019 -0.1855189 
+
+
+$GSM553353
+$GSM553353$massimo
+LumA 
+   3 
+
+$GSM553353$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.08944855 -0.09986974  0.22297004 -0.15284412  0.17542336 
+
+
+$GSM553367
+$GSM553367$massimo
+LumB 
+   4 
+
+$GSM553367$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3036257  0.1831307  0.1400347  0.2353452 -0.1931177 
+
+
+$GSM553255
+$GSM553255$massimo
+LumA 
+   3 
+
+$GSM553255$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.38341294 -0.15816327  0.33782023  0.25184542 -0.08119844 
+
+
+$GSM553334
+$GSM553334$massimo
+LumA 
+   3 
+
+$GSM553334$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.23317412 -0.33868867  0.47524967 -0.08184976  0.24370386 
+
+
+$GSM553201
+$GSM553201$massimo
+LumB 
+   4 
+
+$GSM553201$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.38178463 -0.08640903  0.25455927  0.27985237 -0.16391663 
+
+
+$GSM553398
+$GSM553398$massimo
+LumA 
+   3 
+
+$GSM553398$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3613765 -0.3462875  0.4713417  0.1344985  0.0935736 
+
+
+$GSM553270
+$GSM553270$massimo
+LumA 
+   3 
+
+$GSM553270$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43693009 -0.32761615  0.54450716  0.13449848  0.08564915 
+
+
+$GSM553335
+$GSM553335$massimo
+LumB 
+   4 
+
+$GSM553335$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.155015198 -0.080872775 -0.006838906  0.244138081 -0.178788537 
+
+
+$GSM553215
+$GSM553215$massimo
+LumA 
+   3 
+
+$GSM553215$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.35041251 -0.26726010  0.43204516  0.11105080  0.05601389 
+
+
+$GSM553278
+$GSM553278$massimo
+LumA 
+   3 
+
+$GSM553278$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.42694312 -0.15881459  0.35920538  0.24229266 -0.08271819 
+
+
+$GSM553243
+$GSM553243$massimo
+LumA 
+   3 
+
+$GSM553243$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.22412202 -0.27101992  0.42490365 -0.07832601  0.26092385 
+
+
+$GSM553318
+$GSM553318$massimo
+LumA 
+   3 
+
+$GSM553318$correlazioni
+       Basal         Her2         LumA         LumB       Normal 
+-0.349001303 -0.335106383  0.492509770 -0.002171081  0.178462875 
+
+
+$GSM553324
+$GSM553324$massimo
+LumA 
+   3 
+
+$GSM553324$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36072514 -0.38145897  0.56404690 -0.04407295  0.23273990 
+
+
+$GSM553279
+$GSM553279$massimo
+LumA 
+   3 
+
+$GSM553279$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.38623535 -0.41663048  0.60182371 -0.01074685  0.20256188 
+
+
+$GSM553229
+$GSM553229$massimo
+LumB 
+   4 
+
+$GSM553229$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.03126442 -0.08738839 -0.06062909  0.17884767 -0.03272994 
+
+
+$GSM553304
+$GSM553304$massimo
+LumA 
+   3 
+
+$GSM553304$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.1761832 -0.5530829  0.5740339 -0.2865827  0.4969605 
+
+
+$GSM553288
+$GSM553288$massimo
+LumA 
+   3 
+
+$GSM553288$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.29819800 -0.43649587  0.48425966  0.04146765  0.19756839 
+
+
+$GSM553230
+$GSM553230$massimo
+LumB 
+   4 
+
+$GSM553230$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4087060 -0.1067086  0.2696483  0.3622449 -0.2265523 
+
+
+$GSM553231
+$GSM553231$massimo
+LumB 
+   4 
+
+$GSM553231$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4480026 -0.2054928  0.3239253  0.4071863 -0.2027790 
+
+
+$GSM553223
+$GSM553223$massimo
+LumA 
+   3 
+
+$GSM553223$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.39578810 -0.24435519  0.43866696  0.16532783 -0.01617455 
+
+
+$GSM553187
+$GSM553187$massimo
+LumA 
+   3 
+
+$GSM553187$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.33771168 -0.09563613  0.33174121  0.24880591 -0.08716891 
+
+
+$GSM553280
+$GSM553280$massimo
+LumA 
+   3 
+
+$GSM553280$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.4405124 -0.2163482  0.3983934  0.2598784 -0.1217977 
+
+
+$GSM553224
+$GSM553224$massimo
+LumA 
+   3 
+
+$GSM553224$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36810682 -0.27019106  0.44398611  0.11039948  0.03386887 
+
+
+$GSM553232
+$GSM553232$massimo
+Basal 
+    1 
+
+$GSM553232$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+ 0.3991533 -0.2167825 -0.1937690 -0.1620712  0.1022579 
+
+
+$GSM553271
+$GSM553271$massimo
+Normal 
+     5 
+
+$GSM553271$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.01237516 -0.33391229  0.25184542 -0.13428137  0.25944420 
+
+
+$GSM553282
+$GSM553282$massimo
+LumA 
+   3 
+
+$GSM553282$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36191924 -0.21113765  0.39437690  0.14361702  0.01986539 
+
+
+$GSM553376
+$GSM553376$massimo
+LumA 
+   3 
+
+$GSM553376$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3178463 -0.3923144  0.5980243 -0.1672818  0.3607251 
+
+
+$GSM553313
+$GSM553313$massimo
+LumA 
+   3 
+
+$GSM553313$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.40251845 -0.19680851  0.36832393  0.23577942 -0.03224056 
+
+
+$GSM553319
+$GSM553319$massimo
+LumA 
+   3 
+
+$GSM553319$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.35638298 -0.42792010  0.61115936 -0.07881025  0.29396439 
+
+
+$GSM553256
+$GSM553256$massimo
+Basal 
+    1 
+
+$GSM553256$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+ 0.25759878 -0.19984802 -0.10681719 -0.07121146  0.09585323 
+
+
+$GSM553216
+$GSM553216$massimo
+LumA 
+   3 
+
+$GSM553216$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3588797 -0.2001737  0.3272905  0.2814807 -0.1019323 
+
+
+$GSM553225
+$GSM553225$massimo
+LumA 
+   3 
+
+$GSM553225$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.2850630 -0.4542987  0.5880373 -0.1208207  0.3386887 
+
+
+$GSM553193
+$GSM553193$massimo
+LumA 
+   3 
+
+$GSM553193$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.33944855 -0.31057317  0.39817629  0.16228832  0.01237516 
+
+
+$GSM553399
+$GSM553399$massimo
+LumA 
+   3 
+
+$GSM553399$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.34396287 -0.28002280  0.40361495  0.11425625  0.02969034 
+
+
+$GSM553262
+$GSM553262$massimo
+LumA 
+   3 
+
+$GSM553262$correlazioni
+     Basal       Her2       LumA       LumB     Normal 
+-0.3760313  0.1325445  0.2773556  0.1910551 -0.1120278 
+
+
+$GSM553309
+$GSM553309$massimo
+LumA 
+   3 
+
+$GSM553309$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.35107336 -0.26618178  0.31362119  0.24186501 -0.05416995 
+
+
+$GSM553257
+$GSM553257$massimo
+LumA 
+   3 
+
+$GSM553257$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43855840 -0.27627008  0.41380808  0.23838472 -0.08239253 
+
+
+$GSM553210
+$GSM553210$massimo
+LumA 
+   3 
+
+$GSM553210$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.36322188 -0.15838037  0.37125488  0.19854538 -0.03191489 
+
+
+$GSM553202
+$GSM553202$massimo
+LumA 
+   3 
+
+$GSM553202$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.35757707 -0.39752497  0.47448980  0.06925749  0.09476769 
+
+
+$GSM553336
+$GSM553336$massimo
+LumA 
+   3 
+
+$GSM553336$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.27214503 -0.24012158  0.34194529  0.11159357  0.01400347 
+
+
+$GSM553346
+$GSM553346$massimo
+LumA 
+   3 
+
+$GSM553346$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.15555797 -0.16912723  0.33499783 -0.09856709  0.19637429 
+
+
+$GSM553347
+$GSM553347$massimo
+LumA 
+   3 
+
+$GSM553347$correlazioni
+      Basal        Her2        LumA        LumB      Normal 
+-0.43421624 -0.12299175  0.43790708  0.19170647 -0.01595745 
+
+
