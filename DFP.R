@@ -200,9 +200,9 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
         RNAReduced <- RNAReduced[-toremove,]
       }
       esRNA <- ExpressionSet(as.matrix(RNAReduced),phenoData = phenoData)
+      print(paste("Number of selected genes:", nrow(RNAReduced)))
     }
     
-    print(paste("Number of selected genes:", nrow(RNAReduced)))
     #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
   
     if (core > 1) {
