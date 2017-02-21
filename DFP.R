@@ -173,6 +173,10 @@ skipOddValues <- function (values, skipFactor = 3)
 assignInNamespace(".skipOddValues", skipOddValues, "DFP")
 
 getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA, restoreFromDvs = NA, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1) {
+  if (saveData && is.na(datasetName)) {
+    stop("datasetName must be set when saveData is TRUE.")
+  }
+  
   numberOfGenes = nrow(RNAFinal)
   
   phenoData <- RNAPatientsFinal
