@@ -8,4 +8,5 @@ BRCA.mRNAseq_RPKM.txt
 BRCA.mRNAseq_raw_counts.txt
 progress.log
 paramList*.Rdata
-pathways2
+pathways/*
+pathways2/*
