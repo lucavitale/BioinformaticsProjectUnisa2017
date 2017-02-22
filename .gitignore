@@ -11,4 +11,4 @@ paramList*.Rdata
 pathways/*
 pathways2/*
 .directory
-oxfordPathways/*
+oxfordPathways*/*

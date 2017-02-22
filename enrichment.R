@@ -40,3 +40,7 @@ save(reactomeFinal,file="reactomeFinal.Rdata")
 save(keggFinal,file="keggFinal.Rdata")
 #save(biocartaFinal,file="biocartaFinal.Rdata")
 #save(c6Final,file="c6Final.Rdata")
+
+bestPathways <- egmt@result[1:30,]
+bestPathways <- bestPathways[which(bestPathways$Count >= 10),]
+save(bestPathways,file="bestPathways.Rdata")
