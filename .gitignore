@@ -10,3 +10,4 @@ progress.log
 paramList*.Rdata
 pathways/*
 pathways2/*
+.directory
