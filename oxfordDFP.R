@@ -29,3 +29,16 @@ multiDFP(RNAFinal = oxfordGenes[,trainingIdx],
          filterGenes = F,
          savePath = "oxfordDFPResults",
          datasetName = "oxford training dataset")
+
+load("trainingIdx.RData")
+
+getDFP(RNAFinal = oxfordGenes[,trainingIdx],
+         RNAPatientsFinal = oxfordClass[trainingIdx,],
+         piVal = seq(0.45, 0.7, 0.05),
+         skipFactor = 2,
+         zeta = 0.5,
+         overlapping = 2,
+         core = 7,
+         filterGenes = F,
+         savePath = "oxfordDFPResults",
+         datasetName = "oxford training dataset")
