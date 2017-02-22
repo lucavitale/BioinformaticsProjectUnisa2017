@@ -172,7 +172,7 @@ skipOddValues <- function (values, skipFactor = 3)
 
 assignInNamespace(".skipOddValues", skipOddValues, "DFP")
 
-getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA, restoreFromDvs = NA, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1) {
+getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA, restoreFromDvs = NA, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1, savePath = ".") {
   if (saveData && is.na(datasetName)) {
     stop("datasetName must be set when saveData is TRUE.")
   }
@@ -191,24 +191,24 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
     esRNA <- ExpressionSet(as.matrix(RNAFinal),phenoData = phenoData)
   }
   
-  if (class(restoreFromDvs) != "matrix" && is.na(restoreFromDvs)) {
-    mfs <- calculateMembershipFunctions(esRNA, skipFactor); #mfs[[1]]
-    if (filterGenes) {
-      toremove <- c()
-      for(i in 1:length(mfs)){
-        if (is.na(mfs[[i]]$lel@center))
-          toremove <- c(toremove, i)
-      }
-      if (length(toremove) > 0) {
-        mfs <- mfs[-toremove]
-        RNAReduced <- RNAReduced[-toremove,]
-      }
-      esRNA <- ExpressionSet(as.matrix(RNAReduced),phenoData = phenoData)
-      print(paste("Number of selected genes:", nrow(RNAReduced)))
-    }
-    
-    #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
   
+  mfs <- calculateMembershipFunctions(esRNA, skipFactor); #mfs[[1]]
+  if (filterGenes) {
+    toremove <- c()
+    for(i in 1:length(mfs)){
+      if (is.na(mfs[[i]]$lel@center))
+        toremove <- c(toremove, i)
+    }
+    if (length(toremove) > 0) {
+      mfs <- mfs[-toremove]
+      RNAReduced <- RNAReduced[-toremove,]
+    }
+    esRNA <- ExpressionSet(as.matrix(RNAReduced),phenoData = phenoData)
+    print(paste("Number of selected genes:", nrow(RNAReduced)))
+  }
+  
+  #plotMembershipFunctions(esRNA, mfs, featureNames(esRNA)[1:2])
+  if (class(restoreFromDvs) != "matrix" && is.na(restoreFromDvs)) {
     if (core > 1) {
       cl <- makeCluster(core, outfile = "progress.log")
       dvs <- parDiscretizeExpressionValues(cl, esRNA, mfs, zeta, overlapping); #dvs[1:4,1:10]
@@ -264,10 +264,10 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
       
       if (is.na(customFileName)) {
         nFile <- 1
-        while (file.exists(paste("paramList", nFile, ".Rdata", sep = ""))) {
+        while (file.exists(paste(savePath, "/paramList", nFile, ".Rdata", sep = ""))) {
           nFile <- nFile + 1
         }
-        save(paramList, file = paste("paramList", nFile, ".Rdata", sep = ""))
+        save(paramList, file = paste(savePath, "/paramList", nFile, ".Rdata", sep = ""))
       } else {
         save(paramList, file = customFileName)
       }
@@ -279,7 +279,7 @@ getDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, customFileName = NA,
   
 }
 
-multiDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1) {
+multiDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, skipFactor = 3, zeta = 0.5, piVal = 0.5, overlapping = 1, filterGenes = TRUE, saveData = TRUE, core = 1, savePath = ".") {
   totalCalls <- length(skipFactor) * length(zeta) * length(overlapping)
   i <- 0
   for (sf in skipFactor) {
@@ -287,7 +287,7 @@ multiDFP <- function(RNAFinal, RNAPatientsFinal, datasetName, skipFactor = 3, ze
       for (o in overlapping) {
         i <- i + 1
         print(paste("Call ", i, " of ", totalCalls, "...", sep = ""))
-        getDFP(RNAFinal = RNAFinal, RNAPatientsFinal = RNAPatientsFinal, datasetName = datasetName, skipFactor = sf, zeta = z, piVal = piVal, overlapping = o, filterGenes = filterGenes, saveData = saveData, core = core)
+        getDFP(RNAFinal = RNAFinal, RNAPatientsFinal = RNAPatientsFinal, datasetName = datasetName, skipFactor = sf, zeta = z, piVal = piVal, overlapping = o, filterGenes = filterGenes, saveData = saveData, core = core, savePath = savePath)
         file.remove("progress.log")
       }
     }

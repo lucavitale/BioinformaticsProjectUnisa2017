@@ -16,10 +16,10 @@ getDfpsFromFiles <- function(idx) {
   return(res)
 }
 
-getDfpResults <- function(idx){
+getDfpResults <- function(idx, path = "."){
   df <- data.frame()
   for(i in idx) {
-    fn <- paste("paramList", i, ".Rdata", sep = "")
+    fn <- paste(path, "/paramList", i, ".Rdata", sep = "")
     load(fn)
     if(class(paramList$dfps) == "character") {
       dfps2 <- matrix(paramList$dfps, nrow = 1)
