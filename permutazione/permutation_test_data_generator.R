@@ -74,7 +74,9 @@ n_perm_test = 1000
 ##################################################################################
 
 #LOAD THE DATASET
-dataset = read.table("tcga_breast/RNASeq_full.txt",sep="\t",header=T)
+load("tcga_trainingIdx.RData")
+
+dataset = read.table("tcga_breast/RNASeq_full.txt",sep="\t",header=T)[,trainingIdx]
 load("tcgaDRPResults/paramList96.Rdata")
 DFP_genes = rownames(paramList$dfps)
 

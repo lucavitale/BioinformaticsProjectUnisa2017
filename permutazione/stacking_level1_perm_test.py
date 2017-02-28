@@ -7,10 +7,10 @@ from glob import glob
 from sklearn.cross_validation import StratifiedKFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
-outer_folds = 5
-inner_folds = 3
+outer_folds = 3
+inner_folds = 2
 path_name = "all"
-n_jobs = 5
+n_jobs = 2
 
 for index in range(1,1000,2):
 #for index in range(2,1002,2):
@@ -27,7 +27,7 @@ for index in range(1,1000,2):
 	#		    {'kernel': ['poly'], 'degree':[1,2,3], 'C': [1e-3,1e-2,1e-1,1, 10, 100, 1000]},
 	#		    {'kernel': ['linear'], 'C': [1e-3,1e-2,1e-1,1, 10, 100, 1000]}]
 
-	tuned_parameters = [{'kernel': ['linear'], 'C': [1e-3,1e-2,1e-1,1, 10, 100, 1000]}]
+	tuned_parameters = [{'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
 
 	gs = GridSearchCV(clf,tuned_parameters,n_jobs=n_jobs,cv = inner_folds, refit=True)
 	test_predictions = np.zeros((y.shape[0], n_classes*len(pathways)))
