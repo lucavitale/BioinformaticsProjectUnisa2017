@@ -11,7 +11,7 @@ RNATraining <- RNA[rownames(paramList$dfps),trainingIdx]
 cl <- makeCluster(8)
 
 # empirical entropy (ML)
-nbins <- floor(ncol(miRNATraining)/30)
+nbins <- floor(ncol(miRNATraining)/10)
 
 nmi <- function(RNArow, miRNArow) {
   X <- miRNArow
@@ -27,6 +27,6 @@ onAllGenes <- function(miRNArow) {
 }
 
 clusterExport(cl, varlist = c("nmi","RNATraining","miRNATraining","discretize2d","mi.plugin","nbins","entropy"))
-parApply(cl, miRNATraining, MARGIN = 1, FUN = onAllGenes)
+nmi_miRNA_RNA <- parApply(cl, miRNATraining, MARGIN = 1, FUN = onAllGenes)
 
 stopCluster(cl)
