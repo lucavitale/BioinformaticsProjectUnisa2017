@@ -1,3 +1,4 @@
+import sys
 from sklearn.svm import SVC
 import pandas as pd
 import numpy as np
@@ -12,7 +13,9 @@ inner_folds = 2
 path_name = "all"
 n_jobs = 2
 
-for index in range(1,1000,2):
+startIndex = int(sys.argv[1])
+
+for index in range(startIndex,1000,4):
 #for index in range(2,1002,2):
 #for index in range(34,64,1):
 #for index in range(64,101,1):
