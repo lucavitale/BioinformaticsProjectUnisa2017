@@ -3,17 +3,16 @@ library(readr)
 #average accuracy for each pathway
 tac <- read.table("tcgaPathways_res/test_avg_accuracy.txt",sep=",",header = T)
 #results of the enrichment analysis
-load("allPathways.RData") 
+load("allPathways.Rdata") 
+CTD_diseases_pathways <- read_delim("CTD_diseases_pathways.tsv", "\t", escape_double = FALSE, trim_ws = TRUE)
 
-# 
-# CTD_diseases_pathways <- read_delim("~/bioinfo_luca_gioele/BioinformaticsProjectUnisa2017/CTD_diseases_pathways.tsv", 
-#                                     "\t", escape_double = FALSE, trim_ws = TRUE)
 # 
 # breast_neoplasm_pw <- CTD_diseases_pathways[which(CTD_diseases_pathways$DiseaseName == "Breast Neoplasms"),]
 # breast_neoplasm_pw <- breast_neoplasm_pw$PathwayName
 # breast_neoplasm_pw <- unique(breast_neoplasm_pw)
 # 
 # sum(tac$X %in% breast_neoplasm_pw)
+
 allPathways <- allPathways[order(allPathways$ID),]
 tac2 = cbind(tac,allPathways[tac$X,c("ID","Count")])
 colnames(tac2) = c("Pathway","Accuracy","Params","PathwayCompleteName","Size")
