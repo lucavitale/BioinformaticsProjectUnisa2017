@@ -3,7 +3,7 @@ library(readr)
 #average accuracy for each pathway
 tac <- read.table("tcgaPathways_res/test_avg_accuracy.txt",sep=",",header = T)
 #results of the enrichment analysis
-load("enrichment_results.RData") 
+load("allPathways.RData") 
 
 # 
 # CTD_diseases_pathways <- read_delim("~/bioinfo_luca_gioele/BioinformaticsProjectUnisa2017/CTD_diseases_pathways.tsv", 
@@ -14,9 +14,9 @@ load("enrichment_results.RData")
 # breast_neoplasm_pw <- unique(breast_neoplasm_pw)
 # 
 # sum(tac$X %in% breast_neoplasm_pw)
-
-tac2 = cbind(tac,egmt@result[tac$X,"Count"])
-colnames(tac2) = c("Pathway","Accuracy","Params","Size")
+allPathways <- allPathways[order(allPathways$ID),]
+tac2 = cbind(tac,allPathways[tac$X,c("ID","Count")])
+colnames(tac2) = c("Pathway","Accuracy","Params","PathwayCompleteName","Size")
 idx = grep(tac$X, pattern = "breast",ignore.case = TRUE)
 
 colors = rep("black",nrow(tac2))
@@ -31,5 +31,5 @@ submat = CTD_diseases_pathways[idx_breast,]
 idx_2 = grep(pattern = "REACT",x = submat$PathwayID,ignore.case = TRUE)
 View(submat[idx_2,])
 
-goodPathway <- tac2$Pathway[tac2$Accuracy>0.75]
+goodPathway <- tac2$PathwayCompleteName[tac2$Accuracy>0.75]
 save(goodPathway,file="goodPathway.Rdata")
