@@ -1,22 +1,25 @@
 library(GSA)
 library(clusterProfiler)
 
-load("oxfordDFPResults/paramList60.Rdata")
+load("tcgaDRPResults/paramList96.Rdata")
 gene <- rownames(paramList$dfps)
-breast_genes <- read_csv("breast_genes.txt", col_names = FALSE)
+
+breast_genes <- read.table("tcga_breast/RNASeq_full.txt",sep="\t",header = T)
 
 breast_genes <- breast_genes$X1[breast_genes$X1 %in% rownames(paramList$fps)]
 
-gene <- union(gene,c("BRCA1","BRCA2"))
-gene <- union(gene,breast_genes)
+#gene <- union(gene,c("BRCA1","BRCA2"))
+#gene <- union(gene,breast_genes)
 
 
 gmtfile <- system.file("extdata", "msigdb.v5.2.symbols.gmt",package="clusterProfiler")
+
 c2kegg <- read.gmt(gmtfile)
 
 #sum(gene %in% c2kegg$gene)
 
 egmt <- enricher(gene, TERM2GENE=c2kegg,pvalueCutoff = 0.05)
+save(egmt,file = "enrichment_results.RData")
 #head(egmt)
 
 #View(egmt@result[grep(pattern = "KEGG",x = rownames(egmt@result),ignore.case = F),])
@@ -29,6 +32,8 @@ biocarta <- egmt@result[grep(pattern = "biocarta",x = rownames(egmt@result),igno
 #c6 <- read.gmt(gmtfile)
 #c6 <- unique(c6$ont)
 
+allPathways <- egmt@result[which(egmt@result$Count>10),]
+save(allPathways, file="allPathways.Rdata")
 
 reactomeFinal <- reactome[which(reactome$Count >=10),]
 keggFinal <- kegg[which(kegg$Count >=10),]

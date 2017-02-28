@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
 outer_folds = 3
 inner_folds = 2
-path_name = "../oxford"
+path_name = "../tcga"
 n_jobs = 8
 
 pathways = glob(path_name + "Pathways/*.txt")
@@ -18,13 +18,13 @@ y = LabelEncoder().fit(labels.x).transform(labels.x)
 n_classes = len(np.unique(y))
 
 clf = SVC(probability = True, shrinking = False)
-tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100, 1000],'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
-		    {'kernel': ['poly'], 'degree':[1,2,3], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
-		    {'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
+#tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100, 1000],'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
+#		    {'kernel': ['poly'], 'degree':[1,2,3], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
+#		    {'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
 
 #tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4, 1e-5], 'C': [1e-3,1e-2,1e-1,1, 10, 100, 1000]}]
 
-#tuned_parameters = [{'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
+tuned_parameters = [{'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
 
 gs = GridSearchCV(clf,tuned_parameters,n_jobs=n_jobs,cv = inner_folds, refit=True)
 test_predictions = np.zeros((y.shape[0], n_classes*len(pathways)))
