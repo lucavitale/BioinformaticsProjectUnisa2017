@@ -129,9 +129,9 @@ M = cbind(sort(allPathways$ID),all_avg_acc[order(all_avg_acc$X),c("avg_acc")],pe
 colnames(M) = c("Pathway","Avg_Accuracy_All_Genes","Perm_Test_Result_All_Genes","Original_Pathway_Size")#,
                           # "Avg_Accuracy_Red_Genes","Perm_Test_Result_Red_Genes","Reduced_Pathway_Size")
 M <- as.data.frame(M)
-M$Avg_Accuracy_All_Genes <- as.numeric(M$Avg_Accuracy_All_Genes)
-M$Perm_Test_Result_All_Genes <- as.numeric(M$Perm_Test_Result_All_Genes)
-M$Original_Pathway_Size <- as.numeric(M$Original_Pathway_Size)
+M$Avg_Accuracy_All_Genes <- as.numeric(as.character(M$Avg_Accuracy_All_Genes))
+M$Perm_Test_Result_All_Genes <- as.numeric(as.character(M$Perm_Test_Result_All_Genes))
+M$Original_Pathway_Size <- as.numeric(as.character(M$Original_Pathway_Size))
 View(M)
 #write.table(M,file="perm_test_res_all_pathways.txt",sep="\t",quote = FALSE)
 

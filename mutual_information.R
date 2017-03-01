@@ -2,25 +2,38 @@ library(entropy)
 library(parallel)
 library(parmigene)
 
+load("perm_test_results.Rdata")
+pathwayPath <- paste("tcgaPathways/", MM$Pathway, ".txt", sep="")
+
+getGenes <- function(path) {
+  names(read.table(path, header = T, sep = " "))
+}
+
+genes <- unlist(sapply(pathwayPath, getGenes))
+genes <- unique(genes)
+
 load("tcga_trainingIdx.RData")
-load("tcgaDRPResults/paramList96.Rdata")
+#load("tcgaDRPResults/paramList96.Rdata")
 miRNA <- read.table("tcga_breast/miRNASeq.txt", header = T, sep = "\t")
 miRNATraining <- miRNA[,trainingIdx]
 RNA <- read.table("tcga_breast/RNASeq_full.txt", header = T, sep = "\t")
-RNATraining <- RNA[rownames(paramList$dfps),trainingIdx]
+RNATraining <- RNA[genes,trainingIdx]
 
 cl <- makeCluster(8)
 
+
+
 # empirical entropy (ML)
-nbins <- floor(ncol(miRNATraining)/10)
+#nbins <- floor(ncol(miRNATraining)/10)
 
 nmi <- function(RNArow, miRNArow) {
   X <- miRNArow
   Y <- as.numeric(RNArow)
-  freqTable <- discretize2d(X, Y, nbins, nbins)
+  #freqTable <- discretize2d(X, Y, nbins, nbins)
   #mi <- mi.plugin(freqTable)
-  mi <- mi.empirical(freqTable)
-  res <- mi/(entropy(X) + entropy(Y))
+  #mi <- mi.empirical(freqTable)
+  #res <- mi/(entropy(X) + entropy(Y))
+  res <- cor(X, Y)
   return(res)
   #knnmi(miRNArow,as.numeric(RNArow),3)
 }
