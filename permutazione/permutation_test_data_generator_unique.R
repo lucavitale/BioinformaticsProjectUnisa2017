@@ -29,7 +29,7 @@ get_pathway_dimensions = function(path_class){
 
 create_dataset_for_permutation_test = function(X,perm_test_dir="perm_test",n_perm_test=100,dimensions){
   pb = txtProgressBar(min = 1,max = n_perm_test,style=3)
-  for(i in 551:n_perm_test){
+  for(i in 1:n_perm_test){
     dir.create(paste(perm_test_dir,"/permutation_test_",i,"/",sep=""))
     dir.create(paste(perm_test_dir,"/permutation_test_",i,"/all_path",sep=""))
     dir.create(paste(perm_test_dir,"/permutation_test_",i,"/all_res",sep=""))
@@ -122,14 +122,21 @@ accuracies_all = get_permutation_tests_accuracies(perm_test_dir="perm_test",n_pe
 # perm_res_red = evaluate_perm_test_results(real_accuracies = all_78_avg_acc$avg_acc, perm_test_accuracies=accuracies_red,n_perm_test = n_perm_test)
 perm_res_all = evaluate_perm_test_results(real_accuracies = all_avg_acc$avg_acc, perm_test_accuracies=accuracies_all, n_perm_test = n_perm_test, perm_dimensions = dimensions, all_dimensions = dimensions_all)
 
-M = cbind(all_avg_acc[,c("X","avg_acc")],perm_res_all,dimensions_all)#,
+load("allPathways.Rdata")
+M = cbind(sort(allPathways$ID),all_avg_acc[order(all_avg_acc$X),c("avg_acc")],perm_res_all,dimensions_all)#,
           # all_78_avg_acc[,c("avg_acc")],perm_res_red,dimensions_red)
-
+#M <- M[order(as.integer(rownames(M))),]
 colnames(M) = c("Pathway","Avg_Accuracy_All_Genes","Perm_Test_Result_All_Genes","Original_Pathway_Size")#,
                           # "Avg_Accuracy_Red_Genes","Perm_Test_Result_Red_Genes","Reduced_Pathway_Size")
+M <- as.data.frame(M)
+M$Avg_Accuracy_All_Genes <- as.numeric(M$Avg_Accuracy_All_Genes)
+M$Perm_Test_Result_All_Genes <- as.numeric(M$Perm_Test_Result_All_Genes)
+M$Original_Pathway_Size <- as.numeric(M$Original_Pathway_Size)
 View(M)
-write.table(M,file="perm_test_res_all_pathways.txt",sep="\t",quote = FALSE)
+#write.table(M,file="perm_test_res_all_pathways.txt",sep="\t",quote = FALSE)
 
-MM = M[which(M$Perm_Test_Result_Red_Genes>0.95),]
+MM = M[which(M$Perm_Test_Result_All_Genes>0.95),]
 View(MM)
-write.table(MM,file="significant_pathways_after_perm_test.txt",sep="\t",quote = FALSE)
+#write.table(MM,file="significant_pathways_after_perm_test.txt",sep="\t",quote = FALSE)
+
+save(M, MM, file="perm_test_results.Rdata")
