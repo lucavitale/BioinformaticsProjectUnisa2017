@@ -3,7 +3,7 @@ library(parallel)
 #library(parmigene)
 
 load("perm_test_results.Rdata")
-MM <- MM[-which(MM$Pathway == "GO_REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION"),]
+#MM <- MM[-which(MM$Pathway == "GO_REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION"),]
 pathwayPath <- paste("tcgaPathways/", MM$Pathway, ".txt", sep="")
 
 getGenes <- function(path) {

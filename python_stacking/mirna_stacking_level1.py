@@ -18,13 +18,13 @@ y = LabelEncoder().fit(labels.x).transform(labels.x)
 n_classes = len(np.unique(y))
 
 clf = SVC(probability = True, shrinking = False)
-#tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100, 1000],'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
-#		    {'kernel': ['poly'], 'degree':[1,2,3], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
+tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1, 10, 100, 1000],'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]},
+		    {'kernel': ['poly'], 'degree':[2,3], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]#,
 #		    {'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
 
 #tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4, 1e-5], 'C': [1e-3,1e-2,1e-1,1, 10, 100, 1000]}]
 
-tuned_parameters = [{'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
+#tuned_parameters = [{'kernel': ['linear'], 'C': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6]}]
 
 gs = GridSearchCV(clf,tuned_parameters,n_jobs=n_jobs,cv = inner_folds, refit=True)
 test_predictions = np.zeros((y.shape[0], n_classes*len(pathways)))
@@ -52,7 +52,7 @@ for i, p in enumerate(pathways):
 		test_predictions[np.ix_(test, range(i * n_classes, (i + 1) * n_classes))] = gs.predict_proba(X_test)
 		cm = confusion_matrix(y_test,gs.predict(X_test))
 		mean_cm = mean_cm + cm
-		np.savetxt(path_name + 'Communities_res/' + p_name + '_ranked_genes_fold{}.txt'.format(j), gs.best_estimator_.coef_)
+		#np.savetxt(path_name + 'Communities_res/' + p_name + '_ranked_genes_fold{}.txt'.format(j), gs.best_estimator_.coef_)
 	
 	print mean_cm
 	np.savetxt(path_name + 'Communities_res/' + p_name + 'test_predictions.txt', test_predictions)
