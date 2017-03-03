@@ -1,12 +1,13 @@
-library(entropy)
+#library(entropy)
 library(parallel)
-library(parmigene)
+#library(parmigene)
 
 load("perm_test_results.Rdata")
+MM <- MM[-which(MM$Pathway == "GO_REGULATION_OF_CELL_CYCLE_PHASE_TRANSITION"),]
 pathwayPath <- paste("tcgaPathways/", MM$Pathway, ".txt", sep="")
 
 getGenes <- function(path) {
-  names(read.table(path, header = T, sep = " "))
+  nm <- names(read.table(path, header = T, sep = " ", check.names=FALSE))
 }
 
 genes <- unlist(sapply(pathwayPath, getGenes))
@@ -21,12 +22,10 @@ RNATraining <- RNA[genes,trainingIdx]
 
 cl <- makeCluster(8)
 
-
-
 # empirical entropy (ML)
 #nbins <- floor(ncol(miRNATraining)/10)
 
-nmi <- function(RNArow, miRNArow) {
+correlate <- function(RNArow, miRNArow) {
   X <- miRNArow
   Y <- as.numeric(RNArow)
   #freqTable <- discretize2d(X, Y, nbins, nbins)
@@ -39,10 +38,13 @@ nmi <- function(RNArow, miRNArow) {
 }
 
 onAllGenes <- function(miRNArow) {
-  apply(RNATraining, MARGIN = 1, FUN = nmi, as.numeric(miRNArow))
+  apply(RNATraining, MARGIN = 1, FUN = correlate, as.numeric(miRNArow))
 }
 
-clusterExport(cl, varlist = c("nmi","RNATraining","miRNATraining","discretize2d","mi.plugin","nbins","entropy","knnmi","mi.empirical"))
-nmi_miRNA_RNA <- parApply(cl, miRNATraining, MARGIN = 1, FUN = onAllGenes)
+#clusterExport(cl, varlist = c("correlate","RNATraining","miRNATraining","discretize2d","mi.plugin","nbins","entropy","knnmi","mi.empirical"))
+clusterExport(cl, varlist = c("correlate","RNATraining","miRNATraining"))
+cor_miRNA_RNA <- parApply(cl, miRNATraining, MARGIN = 1, FUN = onAllGenes)
 
 stopCluster(cl)
+
+save(cor_miRNA_RNA, file = "cor_miRNA_RNA.Rdata")

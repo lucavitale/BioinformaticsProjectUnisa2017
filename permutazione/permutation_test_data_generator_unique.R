@@ -123,9 +123,10 @@ accuracies_all = get_permutation_tests_accuracies(perm_test_dir="perm_test",n_pe
 perm_res_all = evaluate_perm_test_results(real_accuracies = all_avg_acc$avg_acc, perm_test_accuracies=accuracies_all, n_perm_test = n_perm_test, perm_dimensions = dimensions, all_dimensions = dimensions_all)
 
 load("allPathways.Rdata")
-M = cbind(sort(allPathways$ID),all_avg_acc[order(all_avg_acc$X),c("avg_acc")],perm_res_all,dimensions_all)#,
+M = cbind(all_avg_acc[,c("avg_acc")],perm_res_all,dimensions_all)#,
           # all_78_avg_acc[,c("avg_acc")],perm_res_red,dimensions_red)
 #M <- M[order(as.integer(rownames(M))),]
+M <- cbind(sort(allPathways$ID), M[order(all_avg_acc$X),])
 colnames(M) = c("Pathway","Avg_Accuracy_All_Genes","Perm_Test_Result_All_Genes","Original_Pathway_Size")#,
                           # "Avg_Accuracy_Red_Genes","Perm_Test_Result_Red_Genes","Reduced_Pathway_Size")
 M <- as.data.frame(M)
